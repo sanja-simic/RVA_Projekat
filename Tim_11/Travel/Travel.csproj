@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>Tim_11.Travel</RootNamespace>
+    <AssemblyName>Travel</AssemblyName>
+    <ProjectGuid>{}</ProjectGuid>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TravelArrangement.cs" />
+    <Compile Include="Passenger.cs" />
+    <Compile Include="Destination.cs" />
+    <Compile Include="AgencyArrangement.cs" />
+    <Compile Include="AgencyTravel.cs" />
+    <Compile Include="ModeOfTransport.cs" />
+    <Compile Include="TravelArrangementState.cs" />
+    <Compile Include="PaidState.cs" />
+    <Compile Include="InProgressState.cs" />
+    <Compile Include="ReservedState.cs" />
+    <Compile Include="CompletedState.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="AddTravelArrangementCommand.cs" />
+    <Compile Include="UpdateTravelArrangementCommand.cs" />
+    <Compile Include="DeleteTravelArrangementCommand.cs" />
+    <Compile Include="CommandManager.cs" />
+    <Compile Include="ITravelArrangementRepository.cs" />
+    <Compile Include="XMLRepository.cs" />
+    <Compile Include="CSVRepository.cs" />
+    <Compile Include="JSONRepository.cs" />
+    <Compile Include="RepositoryFactory.cs" />
+    <Compile Include="TravelService.cs" />
+    <Compile Include="AgencyArrangementAdapter.cs" />
+    <Compile Include="IObserver.cs" />
+    <Compile Include="TravelArrangementSubject.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
