@@ -13,6 +13,7 @@ namespace TravelSystem.Models.DTOs
         public EntityState State { get; set; }
         public System.DateTime CreatedAt { get; set; }
         public System.DateTime UpdatedAt { get; set; }
+        public double TotalPrice { get; set; }
 
         public TravelArrangementDto()
         {

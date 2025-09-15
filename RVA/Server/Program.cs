@@ -1,7 +1,7 @@
 ﻿using System;
-using TravelSystem.Models.Entities;
-using TravelSystem.Models.Enums;
-using TravelSystem.Server.DataAccess.Repositories;
+using System.ServiceModel;
+using TravelSystem.Contracts.ServiceContracts;
+using TravelSystem.Server.Services;
 
 namespace Server
 {
@@ -11,19 +11,37 @@ namespace Server
         {
             Console.WriteLine("TravelSystem Server starting...");
             
-            // Test new structure
-            var repository = new TravelArrangementRepository();
-            var destination = new Destination("1", "Paris", "France", 150.0);
-            var arrangement = new TravelArrangement("arr1", ModeOfTransport.Plane, 7, destination);
+            // Create service host
+            ServiceHost host = new ServiceHost(typeof(TravelSystem.Server.Services.TravelManagementService));
             
-            repository.Add(arrangement);
-            var arrangements = repository.GetAll();
-            
-            Console.WriteLine($"Added arrangement: {arrangement.Id} to {arrangement.Destination.TownName}");
-            Console.WriteLine($"Current state: {arrangement.GetCurrentStateName()}");
-            
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            try
+            {
+                // Add endpoint
+                host.AddServiceEndpoint(
+                    typeof(ITravelManagementService),
+                    new BasicHttpBinding(),
+                    "http://localhost:8080/TravelService");
+
+                // Open the service host
+                host.Open();
+                Console.WriteLine("TravelSystem Service is running at http://localhost:8080/TravelService");
+                Console.WriteLine("Press any key to stop the service...");
+                
+                // Keep the service running
+                Console.ReadKey();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error starting service: {ex.Message}");
+            }
+            finally
+            {
+                // Close the service host
+                if (host.State == CommunicationState.Opened)
+                {
+                    host.Close();
+                }
+            }
         }
     }
 }

@@ -36,14 +36,17 @@
                              Name="TravelArrangementsDataGrid"
                              Margin="0,0,10,0"
                              AutoGenerateColumns="False"
-                             CanUserAddRows="False">
+                             CanUserAddRows="False"
+                             MouseDoubleClick="TravelArrangementsDataGrid_MouseDoubleClick">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                            <DataGridTextColumn Header="Destination" Binding="{Binding Destination.Name}" Width="150"/>
-                            <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate, StringFormat='{}{0:yyyy-MM-dd}'}" Width="100"/>
-                            <DataGridTextColumn Header="End Date" Binding="{Binding EndDate, StringFormat='{}{0:yyyy-MM-dd}'}" Width="100"/>
-                            <DataGridTextColumn Header="Price" Binding="{Binding Price, StringFormat='{}{0:C}'}" Width="80"/>
-                            <DataGridTextColumn Header="State" Binding="{Binding State.Name}" Width="100"/>
+                            <DataGridTextColumn Header="Destination" Binding="{Binding Destination.TownName}" Width="120"/>
+                            <DataGridTextColumn Header="Country" Binding="{Binding Destination.CountryName}" Width="100"/>
+                            <DataGridTextColumn Header="Transportation" Binding="{Binding AssociatedTransportation}" Width="100"/>
+                            <DataGridTextColumn Header="Days" Binding="{Binding NumberOfDays}" Width="60"/>
+                            <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat='{}{0:C}'}" Width="100"/>
+                            <DataGridTextColumn Header="State" Binding="{Binding State}" Width="80"/>
+                            <DataGridTextColumn Header="Created" Binding="{Binding CreatedAt, StringFormat='{}{0:yyyy-MM-dd}'}" Width="80"/>
                         </DataGrid.Columns>
                     </DataGrid>
                     

@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "TravelSystem.Contracts/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "TravelSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TravelSystem.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravelSystem.Contracts.dll": {}
+        }
+      },
+      "TravelSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TravelSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravelSystem.Models.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "TravelSystem.Contracts/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "TravelSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TravelSystem.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravelSystem.Contracts.dll": {}
+        }
+      },
+      "TravelSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TravelSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravelSystem.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TravelSystem.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Shared/TravelSystem.Contracts/TravelSystem.Contracts.csproj",
+      "msbuildProject": "../Shared/TravelSystem.Contracts/TravelSystem.Contracts.csproj"
+    },
+    "TravelSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../Shared/TravelSystem.Models/TravelSystem.Models.csproj",
+      "msbuildProject": "../Shared/TravelSystem.Models/TravelSystem.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "TravelSystem.Contracts >= 1.0.0",
+      "TravelSystem.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Sanja\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\TravelSystem.Client.csproj",
+      "projectName": "TravelSystem.Client",
+      "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\TravelSystem.Client.csproj",
+      "packagesPath": "C:\\Users\\Sanja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Sanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj"
+            },
+            "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

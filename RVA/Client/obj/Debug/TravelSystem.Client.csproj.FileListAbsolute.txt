@@ -1,0 +1,16 @@
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\bin\Debug\TravelSystem.Client.exe.config
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\bin\Debug\TravelSystem.Client.exe
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\bin\Debug\TravelSystem.Client.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.csproj.AssemblyReference.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\App.g.cs
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client_MarkupCompile.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client_MarkupCompile.lref
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\MainWindow.baml
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.g.resources
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.Properties.Resources.resources
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.csproj.GenerateResource.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.csproj.CoreCompileInputs.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.exe
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\TravelSystem.Client.exe.config
