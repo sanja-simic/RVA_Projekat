@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kkjcsJiC7fM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ana\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

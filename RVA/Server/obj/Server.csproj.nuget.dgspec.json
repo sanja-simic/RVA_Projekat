@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj"
+              },
+              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
+        "projectName": "TravelSystem.Contracts",
+        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
+        "projectName": "TravelSystem.Models",
+        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

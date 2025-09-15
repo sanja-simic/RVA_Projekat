@@ -1,5 +1,7 @@
 ﻿using System;
-using Tim11.Travel;
+using TravelSystem.Models.Entities;
+using TravelSystem.Models.Enums;
+using TravelSystem.Server.DataAccess.Repositories;
 
 namespace Server
 {
@@ -7,10 +9,20 @@ namespace Server
     {
         static void Main(string[] args)
         {
-            // Pokretanje test primera
-            TestExample.RunTest();
+            Console.WriteLine("TravelSystem Server starting...");
             
-            Console.WriteLine("\nPritisnite bilo koji taster za izlaz...");
+            // Test new structure
+            var repository = new TravelArrangementRepository();
+            var destination = new Destination("1", "Paris", "France", 150.0);
+            var arrangement = new TravelArrangement("arr1", ModeOfTransport.Plane, 7, destination);
+            
+            repository.Add(arrangement);
+            var arrangements = repository.GetAll();
+            
+            Console.WriteLine($"Added arrangement: {arrangement.Id} to {arrangement.Destination.TownName}");
+            Console.WriteLine($"Current state: {arrangement.GetCurrentStateName()}");
+            
+            Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
     }
