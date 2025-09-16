@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
 {
@@ -9,7 +10,7 @@ namespace Tim11.Travel
 		public override void ChangeState(TravelArrangement arrangement)
 		{
 			// Prelazi na InProgressState
-			arrangement.SetState(new InProgressState());
+			arrangement.ChangeState();
 		}
 
 		public override string GetStateName()

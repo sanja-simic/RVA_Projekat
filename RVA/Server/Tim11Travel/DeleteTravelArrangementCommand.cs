@@ -1,4 +1,6 @@
 using System;
+using TravelSystem.Server.Patterns.Command;
+using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
 {
@@ -30,5 +32,9 @@ namespace Tim11.Travel
                 _travelService.AddArrangement(_deletedArrangement);
             }
         }
+
+        public bool CanUndo => _deletedArrangement != null;
+
+        public string Description => $"Delete Travel Arrangement: {_arrangementId}";
     }
 }

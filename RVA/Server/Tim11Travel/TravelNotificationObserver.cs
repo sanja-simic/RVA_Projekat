@@ -1,8 +1,10 @@
 using System;
+using TravelSystem.Server.Patterns.Observer;
+using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
 {
-    public class TravelNotificationObserver : IObserver
+    public class TravelNotificationObserver : TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement>
     {
         private string observerName;
 

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\
 TravelSystem.Client
 none
 false
-TRACE;DEBUG;NETFRAMEWORK;NET472;;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\App.xaml
+TRACE;DEBUG;NETFRAMEWORK;NET472;
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\App.xaml
 3-1468222702
 
 9781480281
-22331039034
+22-174948007
 MainWindow.xaml;Views\AddEditArrangementWindow.xaml;Views\AddEditPassengerWindow.xaml;
 
-True
+False
 

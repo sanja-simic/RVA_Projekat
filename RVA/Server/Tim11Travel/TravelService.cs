@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TravelSystem.Models.Entities;
+using TravelSystem.Server.Patterns.Observer;
 
 namespace Tim11.Travel
 {
@@ -15,12 +17,12 @@ namespace Tim11.Travel
 			this.subject = new TravelArrangementSubject();
 		}
 
-		public void RegisterObserver(IObserver observer)
+		public void RegisterObserver(TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement> observer)
 		{
 			subject.RegisterObserver(observer);
 		}
 
-		public void UnregisterObserver(IObserver observer)
+		public void UnregisterObserver(TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement> observer)
 		{
 			subject.UnregisterObserver(observer);
 		}

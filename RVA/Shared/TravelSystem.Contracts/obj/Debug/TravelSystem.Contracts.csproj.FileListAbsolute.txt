@@ -1,12 +1,3 @@
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.dll
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.pdb
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Models.dll
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Models.pdb
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.csproj.AssemblyReference.cache
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.csproj.CoreCompileInputs.cache
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSy.373885E2.Up2Date
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.dll
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.pdb
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.dll
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.pdb
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Models.dll
@@ -16,3 +7,12 @@ C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contract
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSy.373885E2.Up2Date
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.dll
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Contracts.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Models.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\bin\Debug\TravelSystem.Models.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.csproj.AssemblyReference.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSy.373885E2.Up2Date
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Shared\TravelSystem.Contracts\obj\Debug\TravelSystem.Contracts.pdb

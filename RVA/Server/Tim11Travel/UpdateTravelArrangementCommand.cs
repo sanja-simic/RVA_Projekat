@@ -1,4 +1,6 @@
 using System;
+using TravelSystem.Server.Patterns.Command;
+using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
 {
@@ -30,5 +32,9 @@ namespace Tim11.Travel
                 _travelService.UpdateArrangement(_oldArrangement);
             }
         }
+
+        public bool CanUndo => _oldArrangement != null;
+
+        public string Description => $"Update Travel Arrangement: {_newArrangement.Id}";
     }
 }

@@ -25,3 +25,29 @@ C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\View
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditPassengerWindow.baml
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditArrangementWindow.g.cs
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditPassengerWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Client.exe.config
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Client.exe
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Client.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Contracts.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Models.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Models.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\TravelSystem.Contracts.pdb
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.csproj.AssemblyReference.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditArrangementWindow.baml
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditPassengerWindow.baml
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\MainWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditArrangementWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditPassengerWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\App.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client_MarkupCompile.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client_MarkupCompile.lref
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\MainWindow.baml
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.g.resources
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.Properties.Resources.resources
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.csproj.GenerateResource.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.csproj.CoreCompileInputs.cache
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.sourcelink.json
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSy.991BC095.Up2Date
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.exe
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.pdb

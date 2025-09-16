@@ -1,19 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TravelSystem.Server.Patterns.Observer;
+using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
 {
-	public class TravelArrangementSubject
+	public class TravelArrangementSubject : ISubject<TravelArrangement>
 	{
-		private List<IObserver> observers;
+		private List<TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement>> observers;
 
 		public TravelArrangementSubject()
 		{
-			observers = new List<IObserver>();
+			observers = new List<TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement>>();
 		}
 
-		public void RegisterObserver(IObserver observer)
+		public void RegisterObserver(TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement> observer)
 		{
 			if (!observers.Contains(observer))
 			{
@@ -21,7 +23,7 @@ namespace Tim11.Travel
 			}
 		}
 
-		public void UnregisterObserver(IObserver observer)
+		public void UnregisterObserver(TravelSystem.Server.Patterns.Observer.IObserver<TravelArrangement> observer)
 		{
 			observers.Remove(observer);
 		}
