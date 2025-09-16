@@ -7,5 +7,7 @@ namespace TravelSystem.Models.DTOs
         public string LastName { get; set; }
         public string PassportNumber { get; set; }
         public int LuggageWeight { get; set; }
+
+        public string FullName => $"{FirstName} {LastName}";
     }
 }

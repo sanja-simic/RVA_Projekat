@@ -1,2 +1,19 @@
 C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.csproj.AssemblyReference.cache
 C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.csproj.AssemblyReference.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Server.Tests.exe
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Server.Tests.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Server.exe
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Contracts.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Models.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Server.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\Server.exe.config
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Models.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\bin\Debug\TravelSystem.Contracts.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSy.545D5E95.Up2Date
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.exe
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Tests\TravelSystem.Server.Tests\obj\Debug\TravelSystem.Server.Tests.pdb

@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {}
+    "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {
+    "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\obj\\",
+        "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Sanja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +33,11 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj"
+              "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj"
               },
-              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
-                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
+              "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
               }
             }
           }
@@ -69,16 +70,17 @@
         }
       }
     },
-    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
+    "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
         "projectName": "TravelSystem.Contracts",
-        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
+        "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Contracts\\TravelSystem.Contracts.csproj",
+        "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
-                "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
+              "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj"
               }
             }
           }
@@ -88,11 +90,12 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
+    "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
         "projectName": "TravelSystem.Models",
-        "projectPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
+        "projectPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Shared\\TravelSystem.Models\\TravelSystem.Models.csproj",
+        "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
             "projectReferences": {}

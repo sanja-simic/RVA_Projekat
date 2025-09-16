@@ -19,8 +19,8 @@ namespace TravelSystem.Client.Services
         {
             try
             {
-                var binding = new BasicHttpBinding();
-                var endpoint = new EndpointAddress("http://localhost:8080/TravelService");
+                var binding = new NetNamedPipeBinding();
+                var endpoint = new EndpointAddress("net.pipe://localhost/TravelService");
                 
                 channelFactory = new ChannelFactory<ITravelManagementService>(binding, endpoint);
                 serviceProxy = channelFactory.CreateChannel();

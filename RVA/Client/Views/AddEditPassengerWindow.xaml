@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Passenger Details" Height="300" Width="400"
+        Title="{Binding WindowTitle}" Height="300" Width="400"
         WindowStartupLocation="CenterOwner" ResizeMode="CanMinimize">
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -21,23 +21,27 @@
         </Grid.ColumnDefinitions>
         
         <Label Grid.Row="0" Grid.Column="0" Content="First Name:" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="0" Grid.Column="1" Name="FirstNameTextBox" Margin="5" Padding="5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="5" Padding="5"/>
         
         <Label Grid.Row="1" Grid.Column="0" Content="Last Name:" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Name="LastNameTextBox" Margin="5" Padding="5"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="5" Padding="5"/>
         
         <Label Grid.Row="2" Grid.Column="0" Content="Passport Number:" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Name="PassportNumberTextBox" Margin="5" Padding="5"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PassportNumber, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="5" Padding="5"/>
         
         <Label Grid.Row="3" Grid.Column="0" Content="Luggage Weight (kg):" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Name="LuggageWeightTextBox" Margin="5" Padding="5"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding LuggageWeight, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="5" Padding="5"/>
         
         <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
                    Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
-            <Button Name="SaveButton" Content="Save" Width="80" Height="30" 
-                   Margin="0,0,10,0" Click="SaveButton_Click" IsDefault="True"/>
-            <Button Name="CancelButton" Content="Cancel" Width="80" Height="30" 
-                   Click="CancelButton_Click" IsCancel="True"/>
+            <Button Content="Save" Width="80" Height="30" 
+                   Margin="0,0,10,0" Command="{Binding SaveCommand}" IsDefault="True"/>
+            <Button Content="Cancel" Width="80" Height="30" 
+                   Command="{Binding CancelCommand}" IsCancel="True"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -340,27 +340,448 @@ namespace TravelSystem.Server.Services
             return arrangement.Destination.StayPriceByDay * arrangement.NumberOfDays;
         }
 
-        // Additional methods for managing destinations and passengers
-        public List<Destination> GetAllDestinations()
+        // WCF Passenger Service Implementation
+        public ServiceResponse<List<PassengerDto>> GetAllPassengers()
         {
-            return _destinations.ToList();
+            try
+            {
+                var passengerDtos = _passengers.Select(ConvertPassengerToDto).ToList();
+                return new ServiceResponse<List<PassengerDto>>
+                {
+                    Data = passengerDtos,
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<List<PassengerDto>>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error retrieving passengers: {ex.Message}"
+                };
+            }
         }
 
-        public List<Passenger> GetAllPassengers()
+        public ServiceResponse<PassengerDto> GetPassengerById(string id)
         {
-            return _passengers.ToList();
+            try
+            {
+                var passenger = _passengers.FirstOrDefault(p => p.Id == id);
+                if (passenger == null)
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "Passenger not found"
+                    };
+                }
+
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = ConvertPassengerToDto(passenger),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error retrieving passenger: {ex.Message}"
+                };
+            }
         }
 
-        public void AddDestination(Destination destination)
+        public ServiceResponse<PassengerDto> AddPassenger(PassengerDto passengerDto)
         {
-            destination.Id = Guid.NewGuid().ToString();
-            _destinations.Add(destination);
+            try
+            {
+                // Check for duplicate passport number
+                if (_passengers.Any(p => p.PassportNumber == passengerDto.PassportNumber))
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "A passenger with this passport number already exists"
+                    };
+                }
+
+                var passenger = ConvertPassengerFromDto(passengerDto);
+                passenger.Id = Guid.NewGuid().ToString();
+                passenger.CreatedAt = DateTime.Now;
+                passenger.UpdatedAt = DateTime.Now;
+
+                if (!passenger.IsValid())
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = passenger.GetValidationErrors()
+                    };
+                }
+
+                _passengers.Add(passenger);
+
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = ConvertPassengerToDto(passenger),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error adding passenger: {ex.Message}"
+                };
+            }
         }
 
-        public void AddPassenger(Passenger passenger)
+        public ServiceResponse<PassengerDto> UpdatePassenger(PassengerDto passengerDto)
         {
-            passenger.Id = Guid.NewGuid().ToString();
-            _passengers.Add(passenger);
+            try
+            {
+                var existingPassenger = _passengers.FirstOrDefault(p => p.Id == passengerDto.Id);
+                if (existingPassenger == null)
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "Passenger not found"
+                    };
+                }
+
+                // Check for duplicate passport number (excluding current passenger)
+                if (_passengers.Any(p => p.Id != passengerDto.Id && p.PassportNumber == passengerDto.PassportNumber))
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "A passenger with this passport number already exists"
+                    };
+                }
+
+                var updatedPassenger = ConvertPassengerFromDto(passengerDto);
+                updatedPassenger.CreatedAt = existingPassenger.CreatedAt;
+                updatedPassenger.UpdatedAt = DateTime.Now;
+
+                if (!updatedPassenger.IsValid())
+                {
+                    return new ServiceResponse<PassengerDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = updatedPassenger.GetValidationErrors()
+                    };
+                }
+
+                var index = _passengers.IndexOf(existingPassenger);
+                _passengers[index] = updatedPassenger;
+
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = ConvertPassengerToDto(updatedPassenger),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<PassengerDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error updating passenger: {ex.Message}"
+                };
+            }
+        }
+
+        public ServiceResponse<bool> DeletePassenger(string id)
+        {
+            try
+            {
+                var passenger = _passengers.FirstOrDefault(p => p.Id == id);
+                if (passenger == null)
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        ErrorMessage = "Passenger not found"
+                    };
+                }
+
+                // Check if passenger is being used in any arrangement
+                var arrangements = _repository.GetAll();
+                var isPassengerInUse = arrangements.Any(a => a.Passengers.Any(p => p.Id == id));
+                
+                if (isPassengerInUse)
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        ErrorMessage = "Cannot delete passenger as they are assigned to one or more travel arrangements"
+                    };
+                }
+
+                _passengers.Remove(passenger);
+
+                return new ServiceResponse<bool>
+                {
+                    Data = true,
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<bool>
+                {
+                    Data = false,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error deleting passenger: {ex.Message}"
+                };
+            }
+        }
+
+        private PassengerDto ConvertPassengerToDto(Passenger passenger)
+        {
+            return new PassengerDto
+            {
+                Id = passenger.Id,
+                FirstName = passenger.FirstName,
+                LastName = passenger.LastName,
+                PassportNumber = passenger.PassportNumber,
+                LuggageWeight = passenger.LuggageWeight
+            };
+        }
+
+        private Passenger ConvertPassengerFromDto(PassengerDto passengerDto)
+        {
+            return new Passenger(
+                passengerDto.Id,
+                passengerDto.FirstName,
+                passengerDto.LastName,
+                passengerDto.PassportNumber,
+                passengerDto.LuggageWeight);
+        }
+
+        // WCF Destination Service Implementation
+        public ServiceResponse<List<DestinationDto>> GetAllDestinations()
+        {
+            try
+            {
+                var destinationDtos = _destinations.Select(ConvertDestinationToDto).ToList();
+                return new ServiceResponse<List<DestinationDto>>
+                {
+                    Data = destinationDtos,
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<List<DestinationDto>>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error retrieving destinations: {ex.Message}"
+                };
+            }
+        }
+
+        public ServiceResponse<DestinationDto> GetDestinationById(string id)
+        {
+            try
+            {
+                var destination = _destinations.FirstOrDefault(d => d.Id == id);
+                if (destination == null)
+                {
+                    return new ServiceResponse<DestinationDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "Destination not found"
+                    };
+                }
+
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = ConvertDestinationToDto(destination),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error retrieving destination: {ex.Message}"
+                };
+            }
+        }
+
+        public ServiceResponse<DestinationDto> AddDestination(DestinationDto destinationDto)
+        {
+            try
+            {
+                var destination = ConvertDestinationFromDto(destinationDto);
+                destination.Id = Guid.NewGuid().ToString();
+                destination.CreatedAt = DateTime.Now;
+                destination.UpdatedAt = DateTime.Now;
+
+                if (!destination.IsValid())
+                {
+                    return new ServiceResponse<DestinationDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = destination.GetValidationErrors()
+                    };
+                }
+
+                _destinations.Add(destination);
+
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = ConvertDestinationToDto(destination),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error adding destination: {ex.Message}"
+                };
+            }
+        }
+
+        public ServiceResponse<DestinationDto> UpdateDestination(DestinationDto destinationDto)
+        {
+            try
+            {
+                var existingDestination = _destinations.FirstOrDefault(d => d.Id == destinationDto.Id);
+                if (existingDestination == null)
+                {
+                    return new ServiceResponse<DestinationDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "Destination not found"
+                    };
+                }
+
+                var updatedDestination = ConvertDestinationFromDto(destinationDto);
+                updatedDestination.CreatedAt = existingDestination.CreatedAt;
+                updatedDestination.UpdatedAt = DateTime.Now;
+
+                if (!updatedDestination.IsValid())
+                {
+                    return new ServiceResponse<DestinationDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = updatedDestination.GetValidationErrors()
+                    };
+                }
+
+                var index = _destinations.IndexOf(existingDestination);
+                _destinations[index] = updatedDestination;
+
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = ConvertDestinationToDto(updatedDestination),
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<DestinationDto>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error updating destination: {ex.Message}"
+                };
+            }
+        }
+
+        public ServiceResponse<bool> DeleteDestination(string id)
+        {
+            try
+            {
+                var destination = _destinations.FirstOrDefault(d => d.Id == id);
+                if (destination == null)
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        ErrorMessage = "Destination not found"
+                    };
+                }
+
+                // Check if destination is being used in any arrangement
+                var arrangements = _repository.GetAll();
+                var isDestinationInUse = arrangements.Any(a => a.Destination.Id == id);
+                
+                if (isDestinationInUse)
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        ErrorMessage = "Cannot delete destination as it is assigned to one or more travel arrangements"
+                    };
+                }
+
+                _destinations.Remove(destination);
+
+                return new ServiceResponse<bool>
+                {
+                    Data = true,
+                    IsSuccess = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<bool>
+                {
+                    Data = false,
+                    IsSuccess = false,
+                    ErrorMessage = $"Error deleting destination: {ex.Message}"
+                };
+            }
+        }
+
+        private DestinationDto ConvertDestinationToDto(Destination destination)
+        {
+            return new DestinationDto
+            {
+                Id = destination.Id,
+                TownName = destination.TownName,
+                CountryName = destination.CountryName,
+                StayPriceByDay = destination.StayPriceByDay
+            };
+        }
+
+        private Destination ConvertDestinationFromDto(DestinationDto destinationDto)
+        {
+            return new Destination(
+                destinationDto.Id,
+                destinationDto.TownName,
+                destinationDto.CountryName,
+                destinationDto.StayPriceByDay);
         }
     }
 }

@@ -29,5 +29,37 @@ namespace TravelSystem.Contracts.ServiceContracts
 
         [OperationContract]
         ServiceResponse<TravelArrangementDto> ChangeArrangementState(string id);
+
+        // Passenger management operations
+        [OperationContract]
+        ServiceResponse<List<PassengerDto>> GetAllPassengers();
+
+        [OperationContract]
+        ServiceResponse<PassengerDto> GetPassengerById(string id);
+
+        [OperationContract]
+        ServiceResponse<PassengerDto> AddPassenger(PassengerDto passenger);
+
+        [OperationContract]
+        ServiceResponse<PassengerDto> UpdatePassenger(PassengerDto passenger);
+
+        [OperationContract]
+        ServiceResponse<bool> DeletePassenger(string id);
+
+        // Destination management operations
+        [OperationContract]
+        ServiceResponse<List<DestinationDto>> GetAllDestinations();
+
+        [OperationContract]
+        ServiceResponse<DestinationDto> GetDestinationById(string id);
+
+        [OperationContract]
+        ServiceResponse<DestinationDto> AddDestination(DestinationDto destination);
+
+        [OperationContract]
+        ServiceResponse<DestinationDto> UpdateDestination(DestinationDto destination);
+
+        [OperationContract]
+        ServiceResponse<bool> DeleteDestination(string id);
     }
 }

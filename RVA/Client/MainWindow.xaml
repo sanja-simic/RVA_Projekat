@@ -4,10 +4,38 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelSystem.Client"
+        xmlns:helpers="clr-namespace:TravelSystem.Client.Helpers"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
-        Title="Travel Management System" Height="600" Width="900">
+        Title="Travel Management System" Height="700" Width="1200">
+    <Window.Resources>
+        <helpers:BoolToConnectionStatusConverter x:Key="BoolToConnectionStatusConverter"/>
+        <helpers:BoolToConnectionColorConverter x:Key="BoolToConnectionColorConverter"/>
+        
+        <Style x:Key="SearchTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style x:Key="FilterComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="MinWidth" Value="120"/>
+        </Style>
+        <Style x:Key="ActionButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="Background" Value="#2E86AB"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
@@ -15,78 +43,287 @@
         
         <!-- Header -->
         <Border Grid.Row="0" Background="#2E86AB" Padding="10">
-            <TextBlock Text="Travel Management System" 
-                       FontSize="18" 
-                       FontWeight="Bold" 
-                       Foreground="White" 
-                       HorizontalAlignment="Center"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="0" 
+                          Text="Travel Management System" 
+                          FontSize="18" 
+                          FontWeight="Bold" 
+                          Foreground="White" 
+                          VerticalAlignment="Center"/>
+                
+                <Button Grid.Column="1" 
+                       Content="Undo" 
+                       Command="{Binding UndoCommand}"
+                       IsEnabled="{Binding CanUndo}"
+                       Style="{StaticResource ActionButtonStyle}"
+                       Margin="5,0"/>
+                
+                <Button Grid.Column="2" 
+                       Content="Redo" 
+                       Command="{Binding RedoCommand}"
+                       IsEnabled="{Binding CanRedo}"
+                       Style="{StaticResource ActionButtonStyle}"
+                       Margin="5,0"/>
+                
+                <Button Grid.Column="3" 
+                       Content="Connect" 
+                       Command="{Binding ConnectToServerCommand}"
+                       Style="{StaticResource ActionButtonStyle}"
+                       Margin="5,0"/>
+            </Grid>
+        </Border>
+
+        <!-- Search and Filter Panel -->
+        <Border Grid.Row="1" Background="#F5F5F5" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Grid.Column="0" 
+                        Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                        Style="{StaticResource SearchTextBoxStyle}"/>
+                
+                <ComboBox Grid.Column="1" 
+                         SelectedValue="{Binding SelectedStateFilter}"
+                         Style="{StaticResource FilterComboBoxStyle}">
+                    <ComboBox.Items>
+                        <helpers:EntityStateFilter DisplayName="All States" Value="{x:Null}"/>
+                        <helpers:EntityStateFilter DisplayName="Reserved" Value="Reserved"/>
+                        <helpers:EntityStateFilter DisplayName="Paid" Value="Paid"/>
+                        <helpers:EntityStateFilter DisplayName="In Progress" Value="InProgress"/>
+                        <helpers:EntityStateFilter DisplayName="Completed" Value="Completed"/>
+                    </ComboBox.Items>
+                    <ComboBox.DisplayMemberPath>DisplayName</ComboBox.DisplayMemberPath>
+                    <ComboBox.SelectedValuePath>Value</ComboBox.SelectedValuePath>
+                </ComboBox>
+                
+                <ComboBox Grid.Column="2" 
+                         SelectedValue="{Binding SelectedTransportationFilter}"
+                         Style="{StaticResource FilterComboBoxStyle}">
+                    <ComboBox.Items>
+                        <helpers:TransportationFilter DisplayName="All Transportation" Value="{x:Null}"/>
+                        <helpers:TransportationFilter DisplayName="Airplane" Value="Plane"/>
+                        <helpers:TransportationFilter DisplayName="Car" Value="Car"/>
+                        <helpers:TransportationFilter DisplayName="Train" Value="Train"/>
+                        <helpers:TransportationFilter DisplayName="Bus" Value="Bus"/>
+                        <helpers:TransportationFilter DisplayName="Ship" Value="Ship"/>
+                    </ComboBox.Items>
+                    <ComboBox.DisplayMemberPath>DisplayName</ComboBox.DisplayMemberPath>
+                    <ComboBox.SelectedValuePath>Value</ComboBox.SelectedValuePath>
+                </ComboBox>
+                
+                <Button Grid.Column="3" 
+                       Content="Clear Filters" 
+                       Command="{Binding ClearFiltersCommand}"
+                       Style="{StaticResource ActionButtonStyle}"/>
+            </Grid>
         </Border>
         
+        
         <!-- Main Content -->
-        <TabControl Grid.Row="1" Margin="10">
+        <TabControl Grid.Row="2" Margin="10">
             <TabItem Header="Travel Arrangements">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
                     
                     <!-- Travel Arrangements List -->
                     <DataGrid Grid.Column="0" 
-                             Name="TravelArrangementsDataGrid"
+                             ItemsSource="{Binding FilteredArrangements}"
+                             SelectedItem="{Binding SelectedArrangement}"
                              Margin="0,0,10,0"
                              AutoGenerateColumns="False"
                              CanUserAddRows="False"
-                             MouseDoubleClick="TravelArrangementsDataGrid_MouseDoubleClick">
+                             IsReadOnly="True"
+                             SelectionMode="Single">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="80"/>
                             <DataGridTextColumn Header="Destination" Binding="{Binding Destination.TownName}" Width="120"/>
                             <DataGridTextColumn Header="Country" Binding="{Binding Destination.CountryName}" Width="100"/>
                             <DataGridTextColumn Header="Transportation" Binding="{Binding AssociatedTransportation}" Width="100"/>
                             <DataGridTextColumn Header="Days" Binding="{Binding NumberOfDays}" Width="60"/>
                             <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat='{}{0:C}'}" Width="100"/>
                             <DataGridTextColumn Header="State" Binding="{Binding State}" Width="80"/>
-                            <DataGridTextColumn Header="Created" Binding="{Binding CreatedAt, StringFormat='{}{0:yyyy-MM-dd}'}" Width="80"/>
+                            <DataGridTextColumn Header="Created" Binding="{Binding CreatedAt, StringFormat='{}{0:yyyy-MM-dd}'}" Width="100"/>
                         </DataGrid.Columns>
                     </DataGrid>
                     
                     <!-- Buttons Panel -->
                     <StackPanel Grid.Column="1" Margin="10">
-                        <Button Name="AddButton" Content="Add New" Height="30" Margin="0,5" Click="AddButton_Click"/>
-                        <Button Name="EditButton" Content="Edit" Height="30" Margin="0,5" Click="EditButton_Click"/>
-                        <Button Name="DeleteButton" Content="Delete" Height="30" Margin="0,5" Click="DeleteButton_Click"/>
-                        <Button Name="RefreshButton" Content="Refresh" Height="30" Margin="0,5" Click="RefreshButton_Click"/>
+                        <Button Content="Add New" 
+                               Command="{Binding AddArrangementCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Edit" 
+                               Command="{Binding EditArrangementCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Delete" 
+                               Command="{Binding DeleteArrangementCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Refresh" 
+                               Command="{Binding RefreshArrangementsCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
                         <Separator Margin="0,10"/>
-                        <Button Name="ConnectButton" Content="Connect to Server" Height="30" Margin="0,5" Click="ConnectButton_Click"/>
+                        <Button Content="Simulate State" 
+                               Command="{Binding SimulateStateTransitionCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Import Legacy" 
+                               Command="{Binding ImportLegacyDataCommand}"
+                               Style="{StaticResource ActionButtonStyle}"
+                               ToolTip="Import data using Adapter pattern"/>
                     </StackPanel>
+
+                    <!-- State Chart and Transitions -->
+                    <Grid Grid.Column="2" Margin="10,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <!-- State Distribution Chart -->
+                        <GroupBox Grid.Row="0" Header="State Distribution" Margin="0,0,0,5">
+                            <lvc:PieChart Series="{Binding StateSeries}" 
+                                         Height="200"/>
+                        </GroupBox>
+                        
+                        <!-- State Transitions -->
+                        <GroupBox Grid.Row="1" Header="State Transitions" Margin="0,5,0,0">
+                            <ListBox ItemsSource="{Binding StateTransitions}"
+                                    ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <TextBlock Text="{Binding Description}" FontWeight="SemiBold"/>
+                                            <TextBlock Text="{Binding TransitionTime, StringFormat='{}{0:HH:mm:ss}'}" 
+                                                      Margin="10,0,0,0" Foreground="Gray"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </GroupBox>
+                    </Grid>
                 </Grid>
             </TabItem>
             
             <TabItem Header="Passengers">
                 <Grid>
-                    <TextBlock Text="Passenger management will be implemented here." 
-                               HorizontalAlignment="Center" 
-                               VerticalAlignment="Center"
-                               FontSize="14"
-                               Foreground="Gray"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Passengers toolbar -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <Button Content="Add Passenger" 
+                               Command="{Binding AddPassengerCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Edit Passenger" 
+                               Command="{Binding EditPassengerCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Delete Passenger" 
+                               Command="{Binding DeletePassengerCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Refresh" 
+                               Command="{Binding RefreshPassengersCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                    </StackPanel>
+                    
+                    <!-- Passengers data grid -->
+                    <DataGrid Grid.Row="1" 
+                              ItemsSource="{Binding Passengers}"
+                              SelectedItem="{Binding SelectedPassenger}"
+                              AutoGenerateColumns="False" 
+                              IsReadOnly="True" 
+                              SelectionMode="Single"
+                              Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" Width="*"/>
+                            <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" Width="*"/>
+                            <DataGridTextColumn Header="Passport Number" Binding="{Binding PassportNumber}" Width="*"/>
+                            <DataGridTextColumn Header="Luggage Weight (kg)" Binding="{Binding LuggageWeight}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    
+                    <!-- Status info -->
+                    <TextBlock Grid.Row="2" 
+                              Text="{Binding Passengers.Count, StringFormat='Total passengers: {0}'}"
+                              Margin="5" FontStyle="Italic" Foreground="Gray"/>
                 </Grid>
             </TabItem>
             
             <TabItem Header="Destinations">
                 <Grid>
-                    <TextBlock Text="Destination management will be implemented here." 
-                               HorizontalAlignment="Center" 
-                               VerticalAlignment="Center"
-                               FontSize="14"
-                               Foreground="Gray"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Destinations toolbar -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <Button Content="Add Destination" 
+                               Command="{Binding AddDestinationCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Edit Destination" 
+                               Command="{Binding EditDestinationCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Delete Destination" 
+                               Command="{Binding DeleteDestinationCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                        <Button Content="Refresh" 
+                               Command="{Binding RefreshDestinationsCommand}"
+                               Style="{StaticResource ActionButtonStyle}"/>
+                    </StackPanel>
+                    
+                    <!-- Destinations data grid -->
+                    <DataGrid Grid.Row="1" 
+                              ItemsSource="{Binding Destinations}"
+                              SelectedItem="{Binding SelectedDestination}"
+                              AutoGenerateColumns="False" 
+                              IsReadOnly="True" 
+                              SelectionMode="Single"
+                              Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Town Name" Binding="{Binding TownName}" Width="*"/>
+                            <DataGridTextColumn Header="Country Name" Binding="{Binding CountryName}" Width="*"/>
+                            <DataGridTextColumn Header="Price per Day (€)" Binding="{Binding StayPriceByDay, StringFormat=F2}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    
+                    <!-- Status info -->
+                    <TextBlock Grid.Row="2" 
+                              Text="{Binding Destinations.Count, StringFormat='Total destinations: {0}'}"
+                              Margin="5" FontStyle="Italic" Foreground="Gray"/>
                 </Grid>
             </TabItem>
         </TabControl>
         
         <!-- Status Bar -->
-        <StatusBar Grid.Row="2">
+        <StatusBar Grid.Row="3">
             <StatusBarItem>
-                <TextBlock Name="StatusTextBlock" Text="Ready"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding StatusMessage}"/>
+                    <TextBlock Text=" | " Margin="10,0"/>
+                    <TextBlock Text="Connection: "/>
+                    <TextBlock Text="{Binding IsConnected, Converter={StaticResource BoolToConnectionStatusConverter}}"
+                              Foreground="{Binding IsConnected, Converter={StaticResource BoolToConnectionColorConverter}}"/>
+                    <TextBlock Text=" | " Margin="10,0"/>
+                    <TextBlock Text="{Binding FilteredArrangements.Count, StringFormat='Arrangements: {0}'}"/>
+                </StackPanel>
             </StatusBarItem>
         </StatusBar>
     </Grid>

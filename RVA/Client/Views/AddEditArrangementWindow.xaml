@@ -4,14 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Travel Arrangement" Height="500" Width="600"
-        WindowStartupLocation="CenterOwner" ResizeMode="CanMinimize">
+        Title="{Binding WindowTitle}" Height="500" Width="700"
+        WindowStartupLocation="CenterOwner" ResizeMode="CanResize">
+    
+    <Window.Resources>
+        <Style x:Key="ErrorTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Margin" Value="0,2,0,5"/>
+        </Style>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style x:Key="InputStyle" TargetType="FrameworkElement">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+
     <Grid Margin="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -24,23 +36,23 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
-                <Label Grid.Row="0" Grid.Column="0" Content="Town:" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Name="TownTextBox" Margin="5" Padding="5"/>
+                <Label Grid.Row="0" Grid.Column="0" Content="Select Destination:" Style="{StaticResource LabelStyle}"/>
+                <ComboBox Grid.Row="0" Grid.Column="1" 
+                         ItemsSource="{Binding AvailableDestinations}"
+                         SelectedItem="{Binding SelectedDestination, ValidatesOnDataErrors=True}"
+                         DisplayMemberPath="TownName"
+                         Style="{StaticResource InputStyle}"
+                         Height="30"/>
                 
-                <Label Grid.Row="0" Grid.Column="2" Content="Country:" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                <TextBox Grid.Row="0" Grid.Column="3" Name="CountryTextBox" Margin="5" Padding="5"/>
-                
-                <Label Grid.Row="1" Grid.Column="0" Content="Price per day:" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Name="PricePerDayTextBox" Margin="5" Padding="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" 
+                          Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource AncestorType=ComboBox}}"
+                          Style="{StaticResource ErrorTextStyle}"/>
             </Grid>
         </GroupBox>
         
@@ -50,6 +62,10 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -58,53 +74,110 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
-                <Label Grid.Row="0" Grid.Column="0" Content="Transportation:" VerticalAlignment="Center"/>
-                <ComboBox Grid.Row="0" Grid.Column="1" Name="TransportationComboBox" Margin="5" Padding="5"/>
+                <Label Grid.Row="0" Grid.Column="0" Content="Transportation:" Style="{StaticResource LabelStyle}"/>
+                <ComboBox Grid.Row="0" Grid.Column="1" 
+                         ItemsSource="{Binding TransportationModes}"
+                         SelectedItem="{Binding SelectedTransportation}"
+                         Style="{StaticResource InputStyle}"
+                         Height="30"/>
                 
-                <Label Grid.Row="0" Grid.Column="2" Content="Number of days:" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                <TextBox Grid.Row="0" Grid.Column="3" Name="NumberOfDaysTextBox" Margin="5" Padding="5"/>
+                <Label Grid.Row="0" Grid.Column="2" Content="Number of Days:" Style="{StaticResource LabelStyle}" Margin="10,0,0,0"/>
+                <TextBox Grid.Row="0" Grid.Column="3" 
+                        Text="{Binding NumberOfDays, ValidatesOnDataErrors=True}"
+                        Style="{StaticResource InputStyle}"
+                        Height="30"/>
                 
-                <Label Grid.Row="1" Grid.Column="0" Content="Total Price:" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="1" Name="TotalPriceTextBlock" Margin="5" Padding="5" 
-                          Background="LightGray" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" 
+                          Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource AncestorType=TextBox}}"
+                          Style="{StaticResource ErrorTextStyle}"/>
+                
+                <Label Grid.Row="2" Grid.Column="0" Content="State:" Style="{StaticResource LabelStyle}"/>
+                <ComboBox Grid.Row="2" Grid.Column="1" 
+                         ItemsSource="{Binding States}"
+                         SelectedItem="{Binding SelectedState}"
+                         Style="{StaticResource InputStyle}"
+                         Height="30"/>
+                
+                <Label Grid.Row="2" Grid.Column="2" Content="Total Price:" Style="{StaticResource LabelStyle}" Margin="10,0,0,0"/>
+                <TextBox Grid.Row="2" Grid.Column="3" 
+                        Text="{Binding TotalPrice, StringFormat=C, Mode=OneWay}"
+                        IsReadOnly="True"
+                        Background="LightGray"
+                        Style="{StaticResource InputStyle}"
+                        Height="30"/>
             </Grid>
         </GroupBox>
         
         <!-- Passengers Section -->
         <GroupBox Grid.Row="2" Header="Passengers" Margin="0,0,0,10">
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 
-                <DataGrid Grid.Row="0" Name="PassengersDataGrid" 
-                         AutoGenerateColumns="False" 
-                         CanUserAddRows="False"
-                         Margin="0,0,0,10">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" Width="*"/>
-                        <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" Width="*"/>
-                        <DataGridTextColumn Header="Passport" Binding="{Binding PassportNumber}" Width="*"/>
-                        <DataGridTextColumn Header="Luggage (kg)" Binding="{Binding LuggageWeight}" Width="80"/>
-                    </DataGrid.Columns>
-                </DataGrid>
+                <!-- Available Passengers -->
+                <Label Grid.Row="0" Grid.Column="0" Content="Available Passengers:" Style="{StaticResource LabelStyle}"/>
+                <ListBox Grid.Row="1" Grid.Column="0" 
+                        ItemsSource="{Binding AvailablePassengers}"
+                        SelectedItem="{Binding SelectedPassengerToAdd}"
+                        DisplayMemberPath="FullName"
+                        Margin="5"
+                        MinHeight="100"/>
                 
-                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Name="AddPassengerButton" Content="Add Passenger" Margin="0,0,10,0" 
-                           Padding="10,5" Click="AddPassengerButton_Click"/>
-                    <Button Name="RemovePassengerButton" Content="Remove Passenger" 
-                           Padding="10,5" Click="RemovePassengerButton_Click"/>
+                <!-- Buttons -->
+                <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+                    <Button Content="Add &gt;&gt;" 
+                           Command="{Binding AddPassengerCommand}"
+                           Margin="5"
+                           Height="30"/>
+                    <Button Content="&lt;&lt; Remove" 
+                           Command="{Binding RemovePassengerCommand}"
+                           Margin="5"
+                           Height="30"/>
                 </StackPanel>
+                
+                <!-- Selected Passengers -->
+                <Label Grid.Row="0" Grid.Column="2" Content="Selected Passengers:" Style="{StaticResource LabelStyle}"/>
+                <ListBox Grid.Row="1" Grid.Column="2" 
+                        ItemsSource="{Binding SelectedPassengers}"
+                        SelectedItem="{Binding SelectedPassengerInList}"
+                        DisplayMemberPath="FullName"
+                        Margin="5"
+                        MinHeight="100"/>
+                
+                <TextBlock Grid.Row="2" Grid.Column="2" 
+                          Text="{Binding SelectedPassengers.Count, StringFormat='Total: {0} passengers'}"
+                          Margin="5"
+                          FontStyle="Italic"
+                          Foreground="Gray"/>
             </Grid>
         </GroupBox>
         
         <!-- Buttons -->
-        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
-            <Button Name="SaveButton" Content="Save" Width="80" Height="30" 
-                   Margin="0,0,10,0" Click="SaveButton_Click" IsDefault="True"/>
-            <Button Name="CancelButton" Content="Cancel" Width="80" Height="30" 
-                   Click="CancelButton_Click" IsCancel="True"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Save" 
+                   Command="{Binding SaveCommand}"
+                   IsDefault="True"
+                   Width="80" 
+                   Height="35" 
+                   Margin="5"
+                   Background="#2E86AB"
+                   Foreground="White"
+                   BorderThickness="0"
+                   FontWeight="SemiBold"/>
+            <Button Content="Cancel" 
+                   Command="{Binding CancelCommand}"
+                   IsCancel="True"
+                   Width="80" 
+                   Height="35" 
+                   Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

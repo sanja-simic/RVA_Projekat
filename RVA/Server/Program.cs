@@ -16,15 +16,12 @@ namespace Server
             
             try
             {
-                // Add endpoint
-                host.AddServiceEndpoint(
-                    typeof(ITravelManagementService),
-                    new BasicHttpBinding(),
-                    "http://localhost:8080/TravelService");
-
+                // Configuration is now handled by App.config
+                // No need to add endpoint manually
+                
                 // Open the service host
                 host.Open();
-                Console.WriteLine("TravelSystem Service is running at http://localhost:8080/TravelService");
+                Console.WriteLine("TravelSystem Service is running at net.pipe://localhost/TravelService");
                 Console.WriteLine("Press any key to stop the service...");
                 
                 // Keep the service running

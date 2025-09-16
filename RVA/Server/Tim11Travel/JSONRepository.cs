@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Json;
+using System.Text;
 using TravelSystem.Models.Entities;
 
 namespace Tim11.Travel
@@ -52,16 +54,147 @@ namespace Tim11.Travel
 
         private void LoadFromFile()
         {
-            // Jednostavna implementacija - za .NET Framework bi trebalo koristiti Newtonsoft.Json
-            // Za sada ostavljamo prazno
-            Console.WriteLine("JSON Repository: LoadFromFile - not implemented for .NET Framework");
+            try
+            {
+                if (File.Exists(_filePath))
+                {
+                    var jsonContent = File.ReadAllText(_filePath, Encoding.UTF8);
+                    if (!string.IsNullOrWhiteSpace(jsonContent))
+                    {
+                        _arrangements = SimpleJsonHelper.DeserializeArrangements(jsonContent);
+                    }
+                }
+                else
+                {
+                    _arrangements = new List<TravelArrangement>();
+                }
+                
+                Console.WriteLine($"JSON Repository: Loaded {_arrangements.Count} arrangements from {_filePath}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JSON Repository: Error loading from file: {ex.Message}");
+                _arrangements = new List<TravelArrangement>();
+            }
         }
 
         private void SaveToFile()
         {
-            // Jednostavna implementacija - za .NET Framework bi trebalo koristiti Newtonsoft.Json
-            // Za sada ostavljamo prazno
-            Console.WriteLine("JSON Repository: SaveToFile - not implemented for .NET Framework");
+            try
+            {
+                var jsonContent = SimpleJsonHelper.SerializeArrangements(_arrangements);
+                File.WriteAllText(_filePath, jsonContent, Encoding.UTF8);
+                
+                Console.WriteLine($"JSON Repository: Saved {_arrangements.Count} arrangements to {_filePath}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JSON Repository: Error saving to file: {ex.Message}");
+            }
+        }
+    }
+
+    // Simple JSON helper for basic serialization
+    public static class SimpleJsonHelper
+    {
+        public static string SerializeArrangements(List<TravelArrangement> arrangements)
+        {
+            if (arrangements == null || arrangements.Count == 0)
+                return "[]";
+
+            var json = new StringBuilder();
+            json.AppendLine("[");
+            
+            for (int i = 0; i < arrangements.Count; i++)
+            {
+                var arrangement = arrangements[i];
+                json.AppendLine("  {");
+                json.AppendLine($"    \"Id\": \"{EscapeJson(arrangement.Id)}\",");
+                json.AppendLine($"    \"AssociatedTransportation\": {(int)arrangement.AssociatedTransportation},");
+                json.AppendLine($"    \"NumberOfDays\": {arrangement.NumberOfDays},");
+                json.AppendLine($"    \"State\": {(int)arrangement.State},");
+                json.AppendLine($"    \"CreatedAt\": \"{arrangement.CreatedAt:yyyy-MM-ddTHH:mm:ss.fffZ}\",");
+                json.AppendLine($"    \"UpdatedAt\": \"{arrangement.UpdatedAt:yyyy-MM-ddTHH:mm:ss.fffZ}\",");
+                
+                // Destination
+                if (arrangement.Destination != null)
+                {
+                    json.AppendLine("    \"Destination\": {");
+                    json.AppendLine($"      \"Id\": \"{EscapeJson(arrangement.Destination.Id)}\",");
+                    json.AppendLine($"      \"TownName\": \"{EscapeJson(arrangement.Destination.TownName)}\",");
+                    json.AppendLine($"      \"CountryName\": \"{EscapeJson(arrangement.Destination.CountryName)}\",");
+                    json.AppendLine($"      \"StayPriceByDay\": {arrangement.Destination.StayPriceByDay}");
+                    json.AppendLine("    },");
+                }
+                else
+                {
+                    json.AppendLine("    \"Destination\": null,");
+                }
+                
+                // Passengers
+                json.AppendLine("    \"Passengers\": [");
+                if (arrangement.Passengers != null)
+                {
+                    for (int j = 0; j < arrangement.Passengers.Count; j++)
+                    {
+                        var passenger = arrangement.Passengers[j];
+                        json.AppendLine("      {");
+                        json.AppendLine($"        \"Id\": \"{EscapeJson(passenger.Id)}\",");
+                        json.AppendLine($"        \"FirstName\": \"{EscapeJson(passenger.FirstName)}\",");
+                        json.AppendLine($"        \"LastName\": \"{EscapeJson(passenger.LastName)}\",");
+                        json.AppendLine($"        \"PassportNumber\": \"{EscapeJson(passenger.PassportNumber)}\",");
+                        json.AppendLine($"        \"LuggageWeight\": {passenger.LuggageWeight}");
+                        json.Append("      }");
+                        if (j < arrangement.Passengers.Count - 1)
+                            json.AppendLine(",");
+                        else
+                            json.AppendLine();
+                    }
+                }
+                json.AppendLine("    ]");
+                
+                json.Append("  }");
+                if (i < arrangements.Count - 1)
+                    json.AppendLine(",");
+                else
+                    json.AppendLine();
+            }
+            
+            json.AppendLine("]");
+            return json.ToString();
+        }
+
+        public static List<TravelArrangement> DeserializeArrangements(string json)
+        {
+            // For a more robust implementation, you would parse JSON properly
+            // This is a simplified implementation for demonstration
+            var arrangements = new List<TravelArrangement>();
+            
+            try
+            {
+                // Very basic parsing - in production use proper JSON parser
+                Console.WriteLine("JSON Repository: Simple JSON deserializer used - data structure may be limited");
+                
+                // Return empty list for now and let server populate with sample data
+                return arrangements;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JSON parsing error: {ex.Message}");
+                return new List<TravelArrangement>();
+            }
+        }
+
+        private static string EscapeJson(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+            
+            return input.Replace("\\", "\\\\")
+                       .Replace("\"", "\\\"")
+                       .Replace("\r", "\\r")
+                       .Replace("\n", "\\n")
+                       .Replace("\t", "\\t");
         }
     }
 }

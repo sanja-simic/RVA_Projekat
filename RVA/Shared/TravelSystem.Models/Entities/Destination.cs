@@ -21,7 +21,7 @@ namespace TravelSystem.Models.Entities
             return base.IsValid() && 
                    !string.IsNullOrEmpty(TownName) && 
                    !string.IsNullOrEmpty(CountryName) && 
-                   StayPriceByDay >= 0;
+                   StayPriceByDay > 0;
         }
 
         public override string GetValidationErrors()
@@ -34,8 +34,8 @@ namespace TravelSystem.Models.Entities
             if (string.IsNullOrEmpty(CountryName))
                 errors += "Country name cannot be null or empty. ";
                 
-            if (StayPriceByDay < 0)
-                errors += "Stay price by day cannot be negative. ";
+            if (StayPriceByDay <= 0)
+                errors += "Stay price by day must be greater than 0. ";
                 
             return errors.Trim();
         }
