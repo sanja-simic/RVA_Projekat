@@ -1,0 +1,3 @@
+AssociatedTransportation,NumberOfDays,Passengers,Destination,State,Id,CreatedAt,UpdatedAt
+Plane,7,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,1,9/17/2025 7:21:07 PM,9/17/2025 7:21:07 PM
+Train,5,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,2,9/17/2025 7:21:07 PM,9/17/2025 7:21:07 PM

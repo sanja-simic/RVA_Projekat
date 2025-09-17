@@ -1,0 +1,22 @@
+﻿[
+  {
+    "AssociatedTransportation": "Plane",
+    "NumberOfDays": 7,
+    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
+    "Destination": "TravelSystem.Models.Entities.Destination",
+    "State": "Reserved",
+    "Id": "1",
+    "CreatedAt": "2025-09-17T19:35:59.934Z",
+    "UpdatedAt": "2025-09-17T19:35:59.934Z"
+  },
+  {
+    "AssociatedTransportation": "Train",
+    "NumberOfDays": 5,
+    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
+    "Destination": "TravelSystem.Models.Entities.Destination",
+    "State": "Reserved",
+    "Id": "2",
+    "CreatedAt": "2025-09-17T19:35:59.934Z",
+    "UpdatedAt": "2025-09-17T19:35:59.934Z"
+  }
+]

@@ -7,28 +7,80 @@ using TravelSystem.Contracts.ServiceContracts;
 using TravelSystem.Models.DTOs;
 using TravelSystem.Models.Entities;
 using TravelSystem.Models.Enums;
-using TravelSystem.Server.DataAccess.Repositories;
+using TravelSystem.Server.DataAccess;
+using TravelSystem.Server.DataAccess.FileHandlers;
 
 namespace TravelSystem.Server.Services
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class TravelManagementService : ITravelManagementService
+    public partial class TravelManagementService : ITravelManagementService
     {
-        private readonly TravelArrangementRepository _repository;
+        private static DataManager _dataManager;
+        private static ILoggingService _loggingService;
+        private readonly List<TravelArrangement> _arrangements;
         private readonly List<Destination> _destinations;
         private readonly List<Passenger> _passengers;
 
         public TravelManagementService()
         {
-            _repository = new TravelArrangementRepository();
+            _loggingService?.Info("TravelManagementService instance created");
+            
+            _arrangements = new List<TravelArrangement>();
             _destinations = new List<Destination>();
             _passengers = new List<Passenger>();
             
-            // Initialize with some sample data
-            InitializeSampleData();
+            // Load existing data or initialize with sample data
+            InitializeData();
+            
+            _loggingService?.Info("TravelManagementService initialization completed");
         }
 
-        private void InitializeSampleData()
+        public static void SetDataManager(DataManager dataManager)
+        {
+            _dataManager = dataManager;
+        }
+
+        public static void SetLoggingService(ILoggingService loggingService)
+        {
+            _loggingService = loggingService;
+        }
+
+        private void InitializeData()
+        {
+            try
+            {
+                _loggingService?.Info("Initializing data from storage");
+                
+                if (_dataManager != null)
+                {
+                    // Load existing data from files
+                    var loadedArrangements = _dataManager.LoadData<TravelArrangement>("arrangements");
+                    var loadedDestinations = _dataManager.LoadData<Destination>("destinations");
+                    var loadedPassengers = _dataManager.LoadData<Passenger>("passengers");
+
+                    _arrangements.AddRange(loadedArrangements);
+                    _destinations.AddRange(loadedDestinations);
+                    _passengers.AddRange(loadedPassengers);
+                    
+                    _loggingService?.Info($"Loaded data: {_arrangements.Count} arrangements, {_destinations.Count} destinations, {_passengers.Count} passengers");
+                }
+
+                // If no data loaded, create sample data
+                if (!_destinations.Any())
+                {
+                    _loggingService?.Info("No existing data found, creating sample data");
+                    CreateSampleData();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading data: {ex.Message}");
+                _loggingService?.Error("Error loading data, creating sample data instead", ex);
+                CreateSampleData();
+            }
+        }
+
+        private void CreateSampleData()
         {
             // Add some sample destinations
             var paris = new Destination("1", "Paris", "France", 150.0);
@@ -50,16 +102,42 @@ namespace TravelSystem.Server.Services
             var arrangement2 = new TravelArrangement("2", ModeOfTransport.Train, 5, london);
             arrangement2.Passengers.Add(passenger2);
             
-            _repository.Add(arrangement1);
-            _repository.Add(arrangement2);
+            _arrangements.AddRange(new[] { arrangement1, arrangement2 });
+
+            // Save initial data
+            SaveAllData();
+        }
+
+        private void SaveAllData()
+        {
+            if (_dataManager == null) return;
+
+            try
+            {
+                _loggingService?.Debug("Saving all data to storage");
+                
+                _dataManager.SaveData(_arrangements, "arrangements");
+                _dataManager.SaveData(_destinations, "destinations");
+                _dataManager.SaveData(_passengers, "passengers");
+                
+                _loggingService?.Debug("All data saved successfully");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving data: {ex.Message}");
+                _loggingService?.Error("Error saving data to storage", ex);
+            }
         }
 
         public ServiceResponse<List<TravelArrangementDto>> GetAllArrangements()
         {
             try
             {
-                var arrangements = _repository.GetAll();
-                var dtos = arrangements.Select(ConvertToDto).ToList();
+                _loggingService?.Debug("GetAllArrangements method called");
+                
+                var dtos = _arrangements.Select(ConvertToDto).ToList();
+                
+                _loggingService?.Info($"Retrieved {dtos.Count} arrangements");
                 
                 return new ServiceResponse<List<TravelArrangementDto>>
                 {
@@ -69,6 +147,8 @@ namespace TravelSystem.Server.Services
             }
             catch (Exception ex)
             {
+                _loggingService?.Error("Error retrieving arrangements", ex);
+                
                 return new ServiceResponse<List<TravelArrangementDto>>
                 {
                     Data = null,
@@ -82,8 +162,7 @@ namespace TravelSystem.Server.Services
         {
             try
             {
-                var arrangements = _repository.GetAll();
-                var arrangement = arrangements.FirstOrDefault(a => a.Id == id);
+                var arrangement = _arrangements.FirstOrDefault(a => a.Id == id);
                 
                 if (arrangement == null)
                 {
@@ -116,12 +195,17 @@ namespace TravelSystem.Server.Services
         {
             try
             {
+                _loggingService?.Info($"Adding new arrangement for destination: {arrangementDto.Destination?.TownName}");
+                
                 var arrangement = ConvertFromDto(arrangementDto);
                 arrangement.Id = Guid.NewGuid().ToString();
                 arrangement.CreatedAt = DateTime.Now;
                 arrangement.UpdatedAt = DateTime.Now;
                 
-                _repository.Add(arrangement);
+                _arrangements.Add(arrangement);
+                SaveAllData();
+                
+                _loggingService?.Info($"Successfully added arrangement with ID: {arrangement.Id}");
                 
                 return new ServiceResponse<TravelArrangementDto>
                 {
@@ -131,6 +215,8 @@ namespace TravelSystem.Server.Services
             }
             catch (Exception ex)
             {
+                _loggingService?.Error("Error adding arrangement", ex);
+                
                 return new ServiceResponse<TravelArrangementDto>
                 {
                     Data = null,
@@ -144,14 +230,30 @@ namespace TravelSystem.Server.Services
         {
             try
             {
-                var arrangement = ConvertFromDto(arrangementDto);
-                arrangement.UpdatedAt = DateTime.Now;
+                var existingArrangement = _arrangements.FirstOrDefault(a => a.Id == arrangementDto.Id);
+                if (existingArrangement == null)
+                {
+                    return new ServiceResponse<TravelArrangementDto>
+                    {
+                        Data = null,
+                        IsSuccess = false,
+                        ErrorMessage = "Arrangement not found"
+                    };
+                }
+
+                var updatedArrangement = ConvertFromDto(arrangementDto);
+                updatedArrangement.UpdatedAt = DateTime.Now;
+                updatedArrangement.CreatedAt = existingArrangement.CreatedAt; // Preserve created date
                 
-                _repository.Update(arrangement);
+                // Update the arrangement in the list
+                var index = _arrangements.IndexOf(existingArrangement);
+                _arrangements[index] = updatedArrangement;
+                
+                SaveAllData();
                 
                 return new ServiceResponse<TravelArrangementDto>
                 {
-                    Data = ConvertToDto(arrangement),
+                    Data = ConvertToDto(updatedArrangement),
                     IsSuccess = true
                 };
             }
@@ -170,7 +272,25 @@ namespace TravelSystem.Server.Services
         {
             try
             {
-                _repository.Delete(id);
+                _loggingService?.Info($"Attempting to delete arrangement with ID: {id}");
+                
+                var arrangement = _arrangements.FirstOrDefault(a => a.Id == id);
+                if (arrangement == null)
+                {
+                    _loggingService?.Warn($"Arrangement with ID {id} not found for deletion");
+                    
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        ErrorMessage = "Arrangement not found"
+                    };
+                }
+
+                _arrangements.Remove(arrangement);
+                SaveAllData();
+                
+                _loggingService?.Info($"Successfully deleted arrangement with ID: {id}");
                 
                 return new ServiceResponse<bool>
                 {
@@ -180,6 +300,8 @@ namespace TravelSystem.Server.Services
             }
             catch (Exception ex)
             {
+                _loggingService?.Error($"Error deleting arrangement with ID: {id}", ex);
+                
                 return new ServiceResponse<bool>
                 {
                     Data = false,
@@ -193,24 +315,24 @@ namespace TravelSystem.Server.Services
         {
             try
             {
-                var arrangements = _repository.GetAll();
+                var arrangements = _arrangements.AsEnumerable();
                 
                 // Apply search filters
                 if (!string.IsNullOrEmpty(criteria.Destination))
                 {
                     arrangements = arrangements.Where(a => 
                         a.Destination.TownName.ToLowerInvariant().Contains(criteria.Destination.ToLowerInvariant()) ||
-                        a.Destination.CountryName.ToLowerInvariant().Contains(criteria.Destination.ToLowerInvariant())).ToList();
+                        a.Destination.CountryName.ToLowerInvariant().Contains(criteria.Destination.ToLowerInvariant()));
                 }
                 
                 if (criteria.MinPrice.HasValue)
                 {
-                    arrangements = arrangements.Where(a => GetTotalPrice(a) >= criteria.MinPrice.Value).ToList();
+                    arrangements = arrangements.Where(a => GetTotalPrice(a) >= criteria.MinPrice.Value);
                 }
                 
                 if (criteria.MaxPrice.HasValue)
                 {
-                    arrangements = arrangements.Where(a => GetTotalPrice(a) <= criteria.MaxPrice.Value).ToList();
+                    arrangements = arrangements.Where(a => GetTotalPrice(a) <= criteria.MaxPrice.Value);
                 }
                 
                 var dtos = arrangements.Select(ConvertToDto).ToList();
@@ -236,8 +358,7 @@ namespace TravelSystem.Server.Services
         {
             try
             {
-                var arrangements = _repository.GetAll();
-                var arrangement = arrangements.FirstOrDefault(a => a.Id == id);
+                var arrangement = _arrangements.FirstOrDefault(a => a.Id == id);
                 
                 if (arrangement == null)
                 {
@@ -250,7 +371,7 @@ namespace TravelSystem.Server.Services
                 }
                 
                 arrangement.ChangeState();
-                _repository.Update(arrangement);
+                SaveAllData();
                 
                 return new ServiceResponse<TravelArrangementDto>
                 {
@@ -520,8 +641,7 @@ namespace TravelSystem.Server.Services
                 }
 
                 // Check if passenger is being used in any arrangement
-                var arrangements = _repository.GetAll();
-                var isPassengerInUse = arrangements.Any(a => a.Passengers.Any(p => p.Id == id));
+                var isPassengerInUse = _arrangements.Any(a => a.Passengers.Any(p => p.Id == id));
                 
                 if (isPassengerInUse)
                 {
@@ -534,6 +654,7 @@ namespace TravelSystem.Server.Services
                 }
 
                 _passengers.Remove(passenger);
+                SaveAllData();
 
                 return new ServiceResponse<bool>
                 {
@@ -732,8 +853,7 @@ namespace TravelSystem.Server.Services
                 }
 
                 // Check if destination is being used in any arrangement
-                var arrangements = _repository.GetAll();
-                var isDestinationInUse = arrangements.Any(a => a.Destination.Id == id);
+                var isDestinationInUse = _arrangements.Any(a => a.Destination.Id == id);
                 
                 if (isDestinationInUse)
                 {
@@ -746,6 +866,7 @@ namespace TravelSystem.Server.Services
                 }
 
                 _destinations.Remove(destination);
+                SaveAllData();
 
                 return new ServiceResponse<bool>
                 {

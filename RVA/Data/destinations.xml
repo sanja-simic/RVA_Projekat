@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfDestination xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Destination>
+    <Id>1</Id>
+    <CreatedAt>2025-09-17T19:18:42.5253821+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T19:18:42.5253821+02:00</UpdatedAt>
+    <TownName>Paris</TownName>
+    <CountryName>France</CountryName>
+    <StayPriceByDay>150</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>2</Id>
+    <CreatedAt>2025-09-17T19:18:42.5253821+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T19:18:42.5253821+02:00</UpdatedAt>
+    <TownName>London</TownName>
+    <CountryName>England</CountryName>
+    <StayPriceByDay>200</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>3</Id>
+    <CreatedAt>2025-09-17T19:18:42.5253821+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T19:18:42.5253821+02:00</UpdatedAt>
+    <TownName>Rome</TownName>
+    <CountryName>Italy</CountryName>
+    <StayPriceByDay>120</StayPriceByDay>
+  </Destination>
+</ArrayOfDestination>

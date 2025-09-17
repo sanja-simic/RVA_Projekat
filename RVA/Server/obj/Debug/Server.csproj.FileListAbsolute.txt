@@ -1,23 +1,6 @@
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\bin\Debug\Server.exe.config
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\bin\Debug\Server.exe
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\bin\Debug\Server.pdb
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\obj\Debug\Server.exe
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\obj\Debug\Server.pdb
-C:\Users\Sanja\Desktop\RVAProjekat\RVA\Server\obj\Debug\Server.exe.config
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\Server.exe.config
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\Server.exe
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\Server.pdb
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Contracts.dll
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Models.dll
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Models.pdb
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Contracts.pdb
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.Up2Date
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\obj\Debug\Server.exe
-C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\obj\Debug\Server.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\log4net.config
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\Server.exe.config
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\Server.exe
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\Server.pdb
@@ -25,9 +8,10 @@ C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSyste
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Models.dll
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Models.pdb
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\TravelSystem.Contracts.pdb
-C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.csproj.Up2Date
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.exe
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.pdb
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\obj\Debug\Server.exe.config
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\log4net.dll
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\log4net.pdb
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\bin\Debug\Newtonsoft.Json.dll

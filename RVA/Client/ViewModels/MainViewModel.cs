@@ -28,6 +28,7 @@ namespace TravelSystem.Client.ViewModels
     {
         private TravelServiceClient _serviceClient;
         private readonly UndoRedoManager _undoRedoManager;
+        private readonly ILoggingService _loggingService;
 
         // Collections
         private ObservableCollection<TravelArrangementDto> _allArrangements;
@@ -52,6 +53,9 @@ namespace TravelSystem.Client.ViewModels
 
         public MainViewModel()
         {
+            _loggingService = new LoggingService();
+            _loggingService.Info("MainViewModel initializing");
+            
             _undoRedoManager = new UndoRedoManager();
             _undoRedoManager.CanUndoRedoChanged += OnCanUndoRedoChanged;
 
@@ -72,8 +76,11 @@ namespace TravelSystem.Client.ViewModels
             // Initialize charts
             InitializeCharts();
 
-            // Initialize service connection
-            InitializeServiceConnection();
+            // Set initial connection status
+            IsConnected = false;
+            StatusMessage = "Click 'Connect' to start server and connect";
+            
+            _loggingService.Info("MainViewModel initialized successfully");
         }
 
         #region Properties
@@ -235,8 +242,8 @@ namespace TravelSystem.Client.ViewModels
             ConnectToServerCommand = new RelayCommand(_ => InitializeServiceConnection());
 
             // Undo/Redo commands
-            UndoCommand = new RelayCommand(_ => _undoRedoManager.Undo(), _ => CanUndo);
-            RedoCommand = new RelayCommand(_ => _undoRedoManager.Redo(), _ => CanRedo);
+            UndoCommand = new RelayCommand(_ => ExecuteUndo(), _ => _undoRedoManager.CanUndo);
+            RedoCommand = new RelayCommand(_ => ExecuteRedo(), _ => _undoRedoManager.CanRedo);
 
             // Filter commands
             ClearFiltersCommand = new RelayCommand(_ => ClearFilters());
@@ -282,13 +289,54 @@ namespace TravelSystem.Client.ViewModels
         {
             try
             {
+                _loggingService.Info("Attempting to initialize service connection");
+                
+                // If currently connected, disconnect
+                if (IsConnected && _serviceClient?.IsConnected == true)
+                {
+                    _loggingService.Info("Currently connected, disconnecting first");
+                    DisconnectFromServer();
+                    return;
+                }
+
+                // Show format selection dialog
+                var formatDialog = new Views.DataFormatSelectionWindow();
+                var dialogResult = formatDialog.ShowDialog();
+                
+                if (dialogResult != true)
+                {
+                    _loggingService.Info("Connection cancelled by user");
+                    StatusMessage = "Connection cancelled by user";
+                    return;
+                }
+
+                _loggingService.Info($"Starting server with format: {formatDialog.SelectedFormat}");
+                
+                // Start server with selected format
+                var app = (App)Application.Current;
+                bool serverStarted = app.StartServerWithFormat(formatDialog.SelectedFormat);
+                
+                if (!serverStarted)
+                {
+                    _loggingService.Error("Failed to start server");
+                    StatusMessage = "Failed to start server";
+                    IsConnected = false;
+                    return;
+                }
+
+                // Wait for server to start
+                _loggingService.Debug("Waiting for server to start (3 seconds)");
+                System.Threading.Thread.Sleep(3000);
+                
+                // Connect to server
                 _serviceClient?.Dispose();
                 _serviceClient = new TravelServiceClient();
                 
                 if (_serviceClient.IsConnected)
                 {
                     IsConnected = true;
-                    StatusMessage = "Connected to server";
+                    StatusMessage = $"Connected to server ({formatDialog.SelectedFormat.ToUpper()} format)";
+                    _loggingService.Info($"Successfully connected to server with {formatDialog.SelectedFormat} format");
                     
                     RefreshArrangements();
                     RefreshPassengers();
@@ -298,12 +346,44 @@ namespace TravelSystem.Client.ViewModels
                 {
                     IsConnected = false;
                     StatusMessage = "Failed to connect to server";
+                    _loggingService.Error("Failed to connect to server - service client connection failed");
                 }
             }
             catch (Exception ex)
             {
                 IsConnected = false;
                 StatusMessage = $"Connection error: {ex.Message}";
+                _loggingService.Error("Error during service connection initialization", ex);
+            }
+        }
+
+        private void DisconnectFromServer()
+        {
+            try
+            {
+                _loggingService.Info("Disconnecting from server");
+                
+                _serviceClient?.Dispose();
+                _serviceClient = null;
+                
+                var app = (App)Application.Current;
+                app.StopServer();
+                
+                IsConnected = false;
+                StatusMessage = "Disconnected from server";
+                
+                // Clear data
+                AllArrangements.Clear();
+                FilteredArrangements.Clear();
+                Passengers.Clear();
+                Destinations.Clear();
+                
+                _loggingService.Info("Successfully disconnected from server and cleared data");
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = $"Disconnect error: {ex.Message}";
+                _loggingService.Error("Error during server disconnection", ex);
             }
         }
 
@@ -324,7 +404,9 @@ namespace TravelSystem.Client.ViewModels
                         {
                             // Add to local collection using command pattern for undo/redo
                             var addCommand = new AddTravelArrangementCommand(AllArrangements, response.Data);
+                            _loggingService.Info($"Adding arrangement command to undo stack. Current CanUndo: {_undoRedoManager.CanUndo}");
                             _undoRedoManager.ExecuteCommand(addCommand);
+                            _loggingService.Info($"After adding command. CanUndo: {_undoRedoManager.CanUndo}, CanRedo: {_undoRedoManager.CanRedo}");
                             
                             ApplyFilters();
                             UpdateChartData();
@@ -603,6 +685,61 @@ namespace TravelSystem.Client.ViewModels
         {
             OnPropertyChanged(nameof(CanUndo));
             OnPropertyChanged(nameof(CanRedo));
+            
+            // Force command manager to update button states
+            System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+        }
+
+        private void ExecuteUndo()
+        {
+            try
+            {
+                _loggingService.Info($"ExecuteUndo called. CanUndo: {_undoRedoManager.CanUndo}");
+                
+                if (_undoRedoManager.CanUndo)
+                {
+                    _undoRedoManager.Undo();
+                    ApplyFilters();
+                    UpdateChartData();
+                    StatusMessage = "Undo executed successfully";
+                    _loggingService.Info("Undo executed successfully");
+                }
+                else
+                {
+                    _loggingService.Warn("Undo called but CanUndo is false");
+                }
+            }
+            catch (Exception ex)
+            {
+                _loggingService.Error("Error executing undo", ex);
+                StatusMessage = $"Undo error: {ex.Message}";
+            }
+        }
+
+        private void ExecuteRedo()
+        {
+            try
+            {
+                _loggingService.Info($"ExecuteRedo called. CanRedo: {_undoRedoManager.CanRedo}");
+                
+                if (_undoRedoManager.CanRedo)
+                {
+                    _undoRedoManager.Redo();
+                    ApplyFilters();
+                    UpdateChartData();
+                    StatusMessage = "Redo executed successfully";
+                    _loggingService.Info("Redo executed successfully");
+                }
+                else
+                {
+                    _loggingService.Warn("Redo called but CanRedo is false");
+                }
+            }
+            catch (Exception ex)
+            {
+                _loggingService.Error("Error executing redo", ex);
+                StatusMessage = $"Redo error: {ex.Message}";
+            }
         }
 
         // Passenger operations

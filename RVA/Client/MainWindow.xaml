@@ -7,10 +7,12 @@
         xmlns:helpers="clr-namespace:TravelSystem.Client.Helpers"
         xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
-        Title="Travel Management System" Height="700" Width="1200">
+        Title="Travel Management System" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <helpers:BoolToConnectionStatusConverter x:Key="BoolToConnectionStatusConverter"/>
         <helpers:BoolToConnectionColorConverter x:Key="BoolToConnectionColorConverter"/>
+        <helpers:BoolToConnectButtonTextConverter x:Key="BoolToConnectButtonTextConverter"/>
         
         <Style x:Key="SearchTextBoxStyle" TargetType="TextBox">
             <Setter Property="Padding" Value="5"/>
@@ -61,22 +63,23 @@
                 <Button Grid.Column="1" 
                        Content="Undo" 
                        Command="{Binding UndoCommand}"
-                       IsEnabled="{Binding CanUndo}"
                        Style="{StaticResource ActionButtonStyle}"
                        Margin="5,0"/>
                 
                 <Button Grid.Column="2" 
                        Content="Redo" 
                        Command="{Binding RedoCommand}"
-                       IsEnabled="{Binding CanRedo}"
                        Style="{StaticResource ActionButtonStyle}"
                        Margin="5,0"/>
                 
                 <Button Grid.Column="3" 
-                       Content="Connect" 
                        Command="{Binding ConnectToServerCommand}"
                        Style="{StaticResource ActionButtonStyle}"
-                       Margin="5,0"/>
+                       Margin="5,0">
+                    <Button.Content>
+                        <TextBlock Text="{Binding IsConnected, Converter={StaticResource BoolToConnectButtonTextConverter}}"/>
+                    </Button.Content>
+                </Button>
             </Grid>
         </Border>
 

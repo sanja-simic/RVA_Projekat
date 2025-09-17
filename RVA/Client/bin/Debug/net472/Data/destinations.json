@@ -1,0 +1,26 @@
+﻿[
+  {
+    "TownName": "Paris",
+    "CountryName": "France",
+    "StayPriceByDay": 150,
+    "Id": "1",
+    "CreatedAt": "2025-09-17T19:35:59.933Z",
+    "UpdatedAt": "2025-09-17T19:35:59.933Z"
+  },
+  {
+    "TownName": "London",
+    "CountryName": "England",
+    "StayPriceByDay": 200,
+    "Id": "2",
+    "CreatedAt": "2025-09-17T19:35:59.933Z",
+    "UpdatedAt": "2025-09-17T19:35:59.933Z"
+  },
+  {
+    "TownName": "Rome",
+    "CountryName": "Italy",
+    "StayPriceByDay": 120,
+    "Id": "3",
+    "CreatedAt": "2025-09-17T19:35:59.933Z",
+    "UpdatedAt": "2025-09-17T19:35:59.933Z"
+  }
+]

@@ -115,6 +115,23 @@
           }
         }
       },
+      "log4net/3.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net462/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -479,6 +496,23 @@
         "runtime": {
           "lib/net462/LiveChartsCore.SkiaSharpView.WPF.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "log4net/3.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net462/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/log4net.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -917,6 +951,25 @@
         "lib/netcoreapp3.1/LiveChartsCore.SkiaSharpView.WPF.xml",
         "livechartscore.skiasharpview.wpf.2.0.0-rc2.nupkg.sha512",
         "livechartscore.skiasharpview.wpf.nuspec"
+      ]
+    },
+    "log4net/3.2.0": {
+      "sha512": "f/iwZ8ToR8FFK0xE0ym4IUSPakuvF/PnXomgMXJs7jxqOGqFn984xtA5IQXBhWXBu61a3yU0XiJCZ3ltENtPRg==",
+      "type": "package",
+      "path": "log4net/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/log4net.dll",
+        "lib/net462/log4net.pdb",
+        "lib/net462/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.pdb",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.3.2.0.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
@@ -1442,7 +1495,8 @@
       "Microsoft.Xaml.Behaviors.Wpf >= 1.1.39",
       "System.ComponentModel.Annotations >= 5.0.0",
       "TravelSystem.Contracts >= 1.0.0",
-      "TravelSystem.Models >= 1.0.0"
+      "TravelSystem.Models >= 1.0.0",
+      "log4net >= 3.2.0"
     ]
   },
   "packageFolders": {
@@ -1514,6 +1568,10 @@
           "System.ComponentModel.Annotations": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"

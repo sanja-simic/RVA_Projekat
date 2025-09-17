@@ -47,6 +47,26 @@ namespace TravelSystem.Client.Helpers
     }
 
     /// <summary>
+    /// Converter for boolean to connect button text
+    /// </summary>
+    public class BoolToConnectButtonTextConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is bool isConnected)
+            {
+                return isConnected ? "Disconnect" : "Connect";
+            }
+            return "Connect";
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    /// <summary>
     /// Helper class for entity state filter items
     /// </summary>
     public class EntityStateFilter

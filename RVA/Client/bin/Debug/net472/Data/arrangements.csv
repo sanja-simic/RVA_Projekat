@@ -1,0 +1,10 @@
+AssociatedTransportation,NumberOfDays,Passengers,Destination,State,Id,CreatedAt,UpdatedAt
+Plane,7,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,1,9/17/2025 6:40:47 PM,9/17/2025 6:40:47 PM
+Train,5,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,2,9/17/2025 6:40:47 PM,9/17/2025 6:40:47 PM
+Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,985fc533-9c37-451e-b434-21a2c666bf40,9/17/2025 6:41:03 PM,9/17/2025 6:41:03 PM
+Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,63b06572-ea90-4b2a-a29c-48693a440599,9/17/2025 6:41:03 PM,9/17/2025 6:41:03 PM
+Plane,3,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,50d848c8-5819-4a57-a8fe-95ddf40afd2b,9/17/2025 7:33:32 PM,9/17/2025 7:33:32 PM
+Plane,3,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,ccc931e0-ad9c-4bc6-bb27-4b054af7b0d0,9/17/2025 7:33:32 PM,9/17/2025 7:33:32 PM
+Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,5da6a91f-5e14-44b3-ab06-829172122537,9/17/2025 7:34:19 PM,9/17/2025 7:34:19 PM
+Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,b944e8e9-4459-46b5-a41b-0df9b3e74584,9/17/2025 7:34:19 PM,9/17/2025 7:34:19 PM
+Plane,2,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,ce5cbf63-8e86-46bf-a36f-22969246cf7b,9/17/2025 7:34:33 PM,9/17/2025 7:34:33 PM

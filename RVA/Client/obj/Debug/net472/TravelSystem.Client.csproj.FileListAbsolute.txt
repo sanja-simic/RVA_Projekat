@@ -81,3 +81,6 @@ C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Trav
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.exe
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.pdb
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client.exe.config
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.baml
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.g.cs
+C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\bin\Debug\net472\log4net.dll

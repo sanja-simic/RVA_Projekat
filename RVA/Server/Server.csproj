@@ -14,6 +14,7 @@
     <Deterministic>true</Deterministic>
     <RuntimeIdentifier>win</RuntimeIdentifier>
     <RuntimeIdentifiers>win;win-x86;win-x64</RuntimeIdentifiers>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="log4net" Version="3.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +63,8 @@
     <Compile Include="DataAccess\FileHandlers\XmlFileHandler.cs" />
     <Compile Include="DataAccess\FileHandlers\JsonFileHandler.cs" />
     <Compile Include="DataAccess\FileHandlers\CsvFileHandler.cs" />
+    <Compile Include="DataAccess\FileHandlers\FileHandlerFactory.cs" />
+    <Compile Include="DataAccess\DataManager.cs" />
     <Compile Include="Patterns\Command\ICommand.cs" />
     <Compile Include="Patterns\Command\CommandBase.cs" />
     <Compile Include="Patterns\Command\CommandManager.cs" />
@@ -102,6 +106,7 @@
     <Compile Include="Services\Interfaces\ITravelManagementService.cs" />
     <Compile Include="Services\Interfaces\IFileService.cs" />
     <Compile Include="Services\Interfaces\ILoggingService.cs" />
+    <Compile Include="Services\LoggingService.cs" />
     <Compile Include="Services\TravelManagementService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

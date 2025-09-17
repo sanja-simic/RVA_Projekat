@@ -23,17 +23,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 390,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 360,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -42,7 +34,7 @@
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
               "ToolTip": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
-              "ViewState": "AgIAAE8CAAAAAAAAAAAmwFoCAAADAAAAAQAAAA==",
+              "ViewState": "AgIAAE8CAAAAAAAAAAAmwFECAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T15:37:38.235Z",
               "EditorCaption": ""
@@ -53,11 +45,12 @@
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs [Read Only]",
               "ViewState": "AgIAADEBAAAAAAAAAAAmwDwBAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T15:10:39.819Z"
+              "WhenOpened": "2025-09-16T15:10:39.819Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
@@ -81,16 +74,6 @@
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T14:00:35.898Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 59,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

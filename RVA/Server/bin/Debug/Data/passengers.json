@@ -1,0 +1,20 @@
+﻿[
+  {
+    "FirstName": "John",
+    "LastName": "Doe",
+    "PassportNumber": "123456789",
+    "LuggageWeight": 23,
+    "Id": "1",
+    "CreatedAt": "2025-09-17T19:16:47.201Z",
+    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+  },
+  {
+    "FirstName": "Jane",
+    "LastName": "Smith",
+    "PassportNumber": "987654321",
+    "LuggageWeight": 18,
+    "Id": "2",
+    "CreatedAt": "2025-09-17T19:16:47.201Z",
+    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+  }
+]

@@ -64,8 +64,33 @@ namespace TravelSystem.Server.DataAccess.FileHandlers
                         var property = properties.FirstOrDefault(p => p.Name == headerNames[j]);
                         if (property != null && property.CanWrite)
                         {
-                            var convertedValue = Convert.ChangeType(values[j], property.PropertyType);
-                            property.SetValue(entity, convertedValue);
+                            try
+                            {
+                                object convertedValue;
+                                
+                                if (property.PropertyType.IsEnum)
+                                {
+                                    // Handle enum types
+                                    convertedValue = Enum.Parse(property.PropertyType, values[j]);
+                                }
+                                else if (string.IsNullOrEmpty(values[j]))
+                                {
+                                    // Handle empty values
+                                    convertedValue = null;
+                                }
+                                else
+                                {
+                                    // Handle other types
+                                    convertedValue = Convert.ChangeType(values[j], property.PropertyType);
+                                }
+                                
+                                property.SetValue(entity, convertedValue);
+                            }
+                            catch (Exception propEx)
+                            {
+                                // Skip properties that can't be converted
+                                Console.WriteLine($"Warning: Could not convert value '{values[j]}' for property '{property.Name}': {propEx.Message}");
+                            }
                         }
                     }
 

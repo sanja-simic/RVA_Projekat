@@ -1,0 +1,278 @@
+2025-09-17 18:40:47 [ERROR] TravelSystem.Server - Error loading data, creating sample data instead - Exception: System.InvalidOperationException: Failed to load CSV file: Invalid cast from 'System.String' to 'TravelSystem.Models.Enums.ModeOfTransport'. ---> System.InvalidCastException: Invalid cast from 'System.String' to 'TravelSystem.Models.Enums.ModeOfTransport'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at TravelSystem.Server.DataAccess.FileHandlers.CsvFileHandler`1.Load(String filePath) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\FileHandlers\CsvFileHandler.cs:line 67
+   --- End of inner exception stack trace ---
+   at TravelSystem.Server.DataAccess.FileHandlers.CsvFileHandler`1.Load(String filePath) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\FileHandlers\CsvFileHandler.cs:line 79
+   at TravelSystem.Server.DataAccess.DataManager.LoadData[T](String fileName) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\DataManager.cs:line 39
+   at TravelSystem.Server.Services.TravelManagementService.InitializeData() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 57
+2025-09-17 18:45:48 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-17 18:48:06 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-17 19:21:07 [ERROR] TravelSystem.Server - Error loading data, creating sample data instead - Exception: System.InvalidOperationException: Failed to load CSV file: Invalid cast from 'System.String' to 'TravelSystem.Models.Enums.ModeOfTransport'. ---> System.InvalidCastException: Invalid cast from 'System.String' to 'TravelSystem.Models.Enums.ModeOfTransport'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at TravelSystem.Server.DataAccess.FileHandlers.CsvFileHandler`1.Load(String filePath) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\FileHandlers\CsvFileHandler.cs:line 67
+   --- End of inner exception stack trace ---
+   at TravelSystem.Server.DataAccess.FileHandlers.CsvFileHandler`1.Load(String filePath) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\FileHandlers\CsvFileHandler.cs:line 79
+   at TravelSystem.Server.DataAccess.DataManager.LoadData[T](String fileName) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\DataAccess\DataManager.cs:line 39
+   at TravelSystem.Server.Services.TravelManagementService.InitializeData() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 57
+2025-09-17 19:33:10 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:10 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:10 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:10 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:10 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:21 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:35 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:53 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:33:53 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:22 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:34:40 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:35:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:29 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:29 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:29 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:29 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:29 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:41 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:43 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-17 19:36:43 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 395
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138

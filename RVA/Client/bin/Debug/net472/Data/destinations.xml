@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ArrayOfDestination xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Destination>
+    <Id>1</Id>
+    <CreatedAt>2025-09-17T17:44:34.3869564+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T17:44:34.3899919+02:00</UpdatedAt>
+    <TownName>Paris</TownName>
+    <CountryName>France</CountryName>
+    <StayPriceByDay>150</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>2</Id>
+    <CreatedAt>2025-09-17T17:44:34.390957+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T17:44:34.390957+02:00</UpdatedAt>
+    <TownName>London</TownName>
+    <CountryName>England</CountryName>
+    <StayPriceByDay>200</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>3</Id>
+    <CreatedAt>2025-09-17T17:44:34.390957+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T17:44:34.390957+02:00</UpdatedAt>
+    <TownName>Rome</TownName>
+    <CountryName>Italy</CountryName>
+    <StayPriceByDay>120</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>65470bee-f7a7-4360-8787-d83206b8d0f4</Id>
+    <CreatedAt>2025-09-17T17:59:28.4014629+02:00</CreatedAt>
+    <UpdatedAt>2025-09-17T17:59:28.4014629+02:00</UpdatedAt>
+    <TownName>Novi Sad</TownName>
+    <CountryName>Serbia</CountryName>
+    <StayPriceByDay>50</StayPriceByDay>
+  </Destination>
+</ArrayOfDestination>
