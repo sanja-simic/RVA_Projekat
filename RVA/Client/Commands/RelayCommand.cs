@@ -4,7 +4,7 @@ using System.Windows.Input;
 namespace TravelSystem.Client.Commands
 {
     /// <summary>
-    /// Basic implementation of ICommand interface
+    /// Basic implementation of ICommand interface - FIXED VERSION
     /// </summary>
     public class RelayCommand : ICommand
     {
@@ -25,6 +25,7 @@ namespace TravelSystem.Client.Commands
 
         public bool CanExecute(object parameter)
         {
+            // ISPRAVKA: Uklonjen * iz _canExecute
             return _canExecute == null || _canExecute(parameter);
         }
 
@@ -40,7 +41,7 @@ namespace TravelSystem.Client.Commands
     }
 
     /// <summary>
-    /// Generic version of RelayCommand
+    /// Generic version of RelayCommand - FIXED VERSION
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class RelayCommand<T> : ICommand
@@ -62,6 +63,7 @@ namespace TravelSystem.Client.Commands
 
         public bool CanExecute(object parameter)
         {
+            // ISPRAVKA: Uklonjen * iz _canExecute
             return _canExecute == null || _canExecute((T)parameter);
         }
 

@@ -1,0 +1,8 @@
+2025-09-18 13:58:26 [ERROR] TravelSystem.Client - Error stopping server process - Exception: System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_HasExited()
+   at TravelSystem.Client.App.StopServer() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\App.xaml.cs:line 119
+2025-09-18 15:35:02 [ERROR] TravelSystem.Client - Error stopping server process - Exception: System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_HasExited()
+   at TravelSystem.Client.App.StopServer() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\App.xaml.cs:line 119

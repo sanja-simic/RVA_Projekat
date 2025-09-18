@@ -32,4 +32,20 @@
     <CountryName>Serbia</CountryName>
     <StayPriceByDay>50</StayPriceByDay>
   </Destination>
+  <Destination>
+    <Id>e946c5da-b025-43d8-834f-9e403a8fa345</Id>
+    <CreatedAt>2025-09-18T14:23:14.8859733+02:00</CreatedAt>
+    <UpdatedAt>2025-09-18T14:23:14.8859733+02:00</UpdatedAt>
+    <TownName>dest</TownName>
+    <CountryName>srb</CountryName>
+    <StayPriceByDay>50</StayPriceByDay>
+  </Destination>
+  <Destination>
+    <Id>59b278a7-d6e3-49c3-b80f-06728a8b0d16</Id>
+    <CreatedAt>2025-09-18T16:02:44.515586+02:00</CreatedAt>
+    <UpdatedAt>2025-09-18T16:02:44.515586+02:00</UpdatedAt>
+    <TownName>mm</TownName>
+    <CountryName>mmm</CountryName>
+    <StayPriceByDay>50</StayPriceByDay>
+  </Destination>
 </ArrayOfDestination>

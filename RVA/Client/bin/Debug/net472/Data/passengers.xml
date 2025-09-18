@@ -18,4 +18,22 @@
     <PassportNumber>987654321</PassportNumber>
     <LuggageWeight>18</LuggageWeight>
   </Passenger>
+  <Passenger>
+    <Id>b7d5f2f5-3336-42fa-816c-b377cdadd337</Id>
+    <CreatedAt>2025-09-18T13:56:02.7402006+02:00</CreatedAt>
+    <UpdatedAt>2025-09-18T13:56:02.7402006+02:00</UpdatedAt>
+    <FirstName>Marko </FirstName>
+    <LastName>Kolarski</LastName>
+    <PassportNumber>12345678</PassportNumber>
+    <LuggageWeight>10</LuggageWeight>
+  </Passenger>
+  <Passenger>
+    <Id>280dc9c4-4a69-4206-8226-fcb7cd403f9e</Id>
+    <CreatedAt>2025-09-18T16:02:32.533108+02:00</CreatedAt>
+    <UpdatedAt>2025-09-18T16:02:32.533108+02:00</UpdatedAt>
+    <FirstName>mm</FirstName>
+    <LastName>mm</LastName>
+    <PassportNumber>mmmmmm</PassportNumber>
+    <LuggageWeight>0</LuggageWeight>
+  </Passenger>
 </ArrayOfPassenger>

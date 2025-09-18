@@ -5,16 +5,16 @@
     "PassportNumber": "123456789",
     "LuggageWeight": 23,
     "Id": "1",
-    "CreatedAt": "2025-09-17T19:16:47.201Z",
-    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+    "CreatedAt": "2025-09-18T18:04:27.524Z",
+    "UpdatedAt": "2025-09-18T18:04:27.524Z"
   },
   {
-    "FirstName": "Jane",
-    "LastName": "Smith",
-    "PassportNumber": "987654321",
-    "LuggageWeight": 18,
-    "Id": "2",
-    "CreatedAt": "2025-09-17T19:16:47.201Z",
-    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+    "FirstName": "x",
+    "LastName": "x",
+    "PassportNumber": "12345678",
+    "LuggageWeight": 0,
+    "Id": "44464739-7ce7-4f98-861f-9c98b6312345",
+    "CreatedAt": "2025-09-18T16:08:43.945Z",
+    "UpdatedAt": "2025-09-18T16:08:43.945Z"
   }
 ]

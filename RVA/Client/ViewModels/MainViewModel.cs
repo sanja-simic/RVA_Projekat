@@ -27,7 +27,8 @@ namespace TravelSystem.Client.ViewModels
     public class MainViewModel : BaseViewModel
     {
         private TravelServiceClient _serviceClient;
-        private readonly UndoRedoManager _undoRedoManager;
+        // Remove the old UndoRedoManager - we'll use GlobalCommandManager instead
+        // private readonly UndoRedoManager _undoRedoManager;
         private readonly ILoggingService _loggingService;
 
         // Collections
@@ -56,8 +57,9 @@ namespace TravelSystem.Client.ViewModels
             _loggingService = new LoggingService();
             _loggingService.Info("MainViewModel initializing");
             
-            _undoRedoManager = new UndoRedoManager();
-            _undoRedoManager.CanUndoRedoChanged += OnCanUndoRedoChanged;
+            // Remove old undo/redo manager initialization
+            // _undoRedoManager = new UndoRedoManager();
+            // _undoRedoManager.CanUndoRedoChanged += OnCanUndoRedoChanged;
 
             // Initialize collections
             _allArrangements = new ObservableCollection<TravelArrangementDto>();
@@ -189,8 +191,8 @@ namespace TravelSystem.Client.ViewModels
             set => SetProperty(ref _isConnected, value);
         }
 
-        public bool CanUndo => _undoRedoManager.CanUndo;
-        public bool CanRedo => _undoRedoManager.CanRedo;
+        public bool CanUndo => GlobalCommandManager.Instance.CanUndo;
+        public bool CanRedo => GlobalCommandManager.Instance.CanRedo;
 
         // Chart properties
         public ISeries[] StateSeries { get; set; }
@@ -242,8 +244,8 @@ namespace TravelSystem.Client.ViewModels
             ConnectToServerCommand = new RelayCommand(_ => InitializeServiceConnection());
 
             // Undo/Redo commands
-            UndoCommand = new RelayCommand(_ => ExecuteUndo(), _ => _undoRedoManager.CanUndo);
-            RedoCommand = new RelayCommand(_ => ExecuteRedo(), _ => _undoRedoManager.CanRedo);
+            UndoCommand = new RelayCommand(_ => ExecuteUndo(), _ => GlobalCommandManager.Instance.CanUndo);
+            RedoCommand = new RelayCommand(_ => ExecuteRedo(), _ => GlobalCommandManager.Instance.CanRedo);
 
             // Filter commands
             ClearFiltersCommand = new RelayCommand(_ => ClearFilters());
@@ -404,9 +406,9 @@ namespace TravelSystem.Client.ViewModels
                         {
                             // Add to local collection using command pattern for undo/redo
                             var addCommand = new AddTravelArrangementCommand(AllArrangements, response.Data);
-                            _loggingService.Info($"Adding arrangement command to undo stack. Current CanUndo: {_undoRedoManager.CanUndo}");
-                            _undoRedoManager.ExecuteCommand(addCommand);
-                            _loggingService.Info($"After adding command. CanUndo: {_undoRedoManager.CanUndo}, CanRedo: {_undoRedoManager.CanRedo}");
+                            _loggingService.Info($"Adding arrangement command to undo stack. Current CanUndo: {GlobalCommandManager.Instance.CanUndo}");
+                            GlobalCommandManager.Instance.ExecuteCommand(addCommand);
+                            _loggingService.Info($"After adding command. CanUndo: {GlobalCommandManager.Instance.CanUndo}, CanRedo: {GlobalCommandManager.Instance.CanRedo}");
                             
                             ApplyFilters();
                             UpdateChartData();
@@ -462,7 +464,7 @@ namespace TravelSystem.Client.ViewModels
                             };
                             var updateCommand = new UpdateTravelArrangementCommand(
                                 AllArrangements, originalArrangement, response.Data);
-                            _undoRedoManager.ExecuteCommand(updateCommand);
+                            GlobalCommandManager.Instance.ExecuteCommand(updateCommand);
                             
                             ApplyFilters();
                             UpdateChartData();
@@ -505,7 +507,7 @@ namespace TravelSystem.Client.ViewModels
                     if (response.IsSuccess)
                     {
                         var deleteCommand = new DeleteTravelArrangementCommand(AllArrangements, SelectedArrangement);
-                        _undoRedoManager.ExecuteCommand(deleteCommand);
+                        GlobalCommandManager.Instance.ExecuteCommand(deleteCommand);
                         
                         ApplyFilters();
                         UpdateChartData();
@@ -694,11 +696,11 @@ namespace TravelSystem.Client.ViewModels
         {
             try
             {
-                _loggingService.Info($"ExecuteUndo called. CanUndo: {_undoRedoManager.CanUndo}");
+                _loggingService.Info($"ExecuteUndo called. CanUndo: {GlobalCommandManager.Instance.CanUndo}");
                 
-                if (_undoRedoManager.CanUndo)
+                if (GlobalCommandManager.Instance.CanUndo)
                 {
-                    _undoRedoManager.Undo();
+                    GlobalCommandManager.Instance.Undo();
                     ApplyFilters();
                     UpdateChartData();
                     StatusMessage = "Undo executed successfully";
@@ -720,11 +722,11 @@ namespace TravelSystem.Client.ViewModels
         {
             try
             {
-                _loggingService.Info($"ExecuteRedo called. CanRedo: {_undoRedoManager.CanRedo}");
+                _loggingService.Info($"ExecuteRedo called. CanRedo: {GlobalCommandManager.Instance.CanRedo}");
                 
-                if (_undoRedoManager.CanRedo)
+                if (GlobalCommandManager.Instance.CanRedo)
                 {
-                    _undoRedoManager.Redo();
+                    GlobalCommandManager.Instance.Redo();
                     ApplyFilters();
                     UpdateChartData();
                     StatusMessage = "Redo executed successfully";
@@ -757,7 +759,9 @@ namespace TravelSystem.Client.ViewModels
                         
                         if (response.IsSuccess)
                         {
-                            Passengers.Add(response.Data);
+                            // Use command pattern for undo/redo
+                            var addCommand = new AddPassengerCommand(Passengers, response.Data);
+                            GlobalCommandManager.Instance.ExecuteCommand(addCommand);
                             StatusMessage = "Passenger added successfully";
                         }
                         else
@@ -831,7 +835,9 @@ namespace TravelSystem.Client.ViewModels
                     
                     if (response.IsSuccess)
                     {
-                        Passengers.Remove(SelectedPassenger);
+                        // Use command pattern for undo/redo
+                        var removeCommand = new RemovePassengerCommand(Passengers, SelectedPassenger);
+                        GlobalCommandManager.Instance.ExecuteCommand(removeCommand);
                         StatusMessage = "Passenger deleted successfully";
                     }
                     else
@@ -892,7 +898,9 @@ namespace TravelSystem.Client.ViewModels
                         
                         if (response.IsSuccess)
                         {
-                            Destinations.Add(response.Data);
+                            // Use command pattern for undo/redo
+                            var addCommand = new AddDestinationCommand(Destinations, response.Data);
+                            GlobalCommandManager.Instance.ExecuteCommand(addCommand);
                             StatusMessage = "Destination added successfully";
                         }
                         else
@@ -966,7 +974,9 @@ namespace TravelSystem.Client.ViewModels
                     
                     if (response.IsSuccess)
                     {
-                        Destinations.Remove(SelectedDestination);
+                        // Use command pattern for undo/redo
+                        var removeCommand = new RemoveDestinationCommand(Destinations, SelectedDestination);
+                        GlobalCommandManager.Instance.ExecuteCommand(removeCommand);
                         StatusMessage = "Destination deleted successfully";
                     }
                     else

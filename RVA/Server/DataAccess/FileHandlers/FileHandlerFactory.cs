@@ -19,8 +19,18 @@ namespace TravelSystem.Server.DataAccess.FileHandlers
                 case DataFileFormat.XML:
                     return new XmlFileHandler<T>();
                 case DataFileFormat.JSON:
+                    // Use specialized handler for TravelArrangement
+                    if (typeof(T) == typeof(TravelArrangement))
+                    {
+                        return (IFileHandler<T>)(object)new TravelArrangementJsonFileHandler();
+                    }
                     return new JsonFileHandler<T>();
                 case DataFileFormat.CSV:
+                    // Use specialized handler for TravelArrangement
+                    if (typeof(T) == typeof(TravelArrangement))
+                    {
+                        return (IFileHandler<T>)(object)new TravelArrangementCsvFileHandler();
+                    }
                     return new CsvFileHandler<T>();
                 default:
                     throw new ArgumentException($"Unsupported file format: {format}");

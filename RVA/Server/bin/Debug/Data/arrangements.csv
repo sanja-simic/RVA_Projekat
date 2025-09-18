@@ -1,0 +1,2 @@
+Id,Transportation,NumberOfDays,State,CreatedAt,UpdatedAt,DestinationId,DestinationTown,DestinationCountry,DestinationPrice,PassengerIds,PassengerNames
+sample-1,1,7,0,2025-09-18T15:54:46.680Z,2025-09-18T15:54:46.680Z,1,Paris,France,150,1,John Doe

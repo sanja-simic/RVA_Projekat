@@ -1,19 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\",
+  "WorkspaceRootPath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\sanja\\desktop\\rvaprojekat\\rva_projekat\\rva\\client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\ana\\documents\\faks\\4. god\\rva\\projekat\\rva_projekat\\rva\\client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\ana\\documents\\faks\\4. god\\rva\\projekat\\rva_projekat\\rva\\client\\commands\\globalcommandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|solutionrelative:client\\commands\\globalcommandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\sanja\\desktop\\rvaprojekat\\rva_projekat\\rva\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\ana\\documents\\faks\\4. god\\rva\\projekat\\rva_projekat\\rva\\client\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|solutionrelative:client\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\server\\tim11travel\\updatetravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|solutionrelative:server\\tim11travel\\updatetravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\server\\tim11travel\\travelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|solutionrelative:server\\tim11travel\\travelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\server\\tim11travel\\deletetravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|solutionrelative:server\\tim11travel\\deletetravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\server\\tim11travel\\addtravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|solutionrelative:server\\tim11travel\\addtravelarrangementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\server\\patterns\\command\\compositecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F890695-A621-4133-BBEA-57F8CA621CEF}|Server\\Server.csproj|solutionrelative:server\\patterns\\command\\compositecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|c:\\users\\ana\\documents\\faks\\4. god\\rva\\projekat\\rva_projekat\\rva\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D5E6F7A8-B9C0-1D2E-3F4A-5B6C7D8E9F0A}|Client\\TravelSystem.Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -24,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 360,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,67 +57,116 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SKSurface.cs",
-              "DocumentMoniker": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
-              "ToolTip": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\714b9c54db71220c5895a0c55ff2371fe4f900ac6436b421f29988ca0bd3a4fa\\SKSurface.cs",
-              "ViewState": "AgIAAE8CAAAAAAAAAAAmwFECAAADAAAAAQAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GlobalCommandManager.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\Commands\\GlobalCommandManager.cs",
+              "RelativeDocumentMoniker": "Client\\Commands\\GlobalCommandManager.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\Commands\\GlobalCommandManager.cs",
+              "RelativeToolTip": "Client\\Commands\\GlobalCommandManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T15:37:38.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T12:44:09.955Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\Sanja\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\39d53760d2cbd8058c366fafde055a13404dbf5dcafa77ed9c1054734f119e5c\\XamlReader.cs [Read Only]",
-              "ViewState": "AgIAADEBAAAAAAAAAAAmwDwBAAACAAAAAQAAAA==",
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Client\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "Client\\Commands\\RelayCommand.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowE8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T15:10:39.819Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2025-09-18T12:40:25.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Client\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T14:00:35.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Client\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml",
               "RelativeToolTip": "Client\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-15T14:00:39.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Client\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Client\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwA0AAAAiAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TravelService.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\TravelService.cs",
+              "RelativeDocumentMoniker": "Server\\Tim11Travel\\TravelService.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\TravelService.cs",
+              "RelativeToolTip": "Server\\Tim11Travel\\TravelService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAWwCUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T14:00:35.898Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 89,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-09-18T12:19:38.144Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateTravelArrangementCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\UpdateTravelArrangementCommand.cs",
+              "RelativeDocumentMoniker": "Server\\Tim11Travel\\UpdateTravelArrangementCommand.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\UpdateTravelArrangementCommand.cs",
+              "RelativeToolTip": "Server\\Tim11Travel\\UpdateTravelArrangementCommand.cs",
+              "ViewState": "AQIAAAUAAACAmZmZmZknwCsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:18:38.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteTravelArrangementCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\DeleteTravelArrangementCommand.cs",
+              "RelativeDocumentMoniker": "Server\\Tim11Travel\\DeleteTravelArrangementCommand.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\DeleteTravelArrangementCommand.cs",
+              "RelativeToolTip": "Server\\Tim11Travel\\DeleteTravelArrangementCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:17:01.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddTravelArrangementCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\AddTravelArrangementCommand.cs",
+              "RelativeDocumentMoniker": "Server\\Tim11Travel\\AddTravelArrangementCommand.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Tim11Travel\\AddTravelArrangementCommand.cs",
+              "RelativeToolTip": "Server\\Tim11Travel\\AddTravelArrangementCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:15:13.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompositeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Patterns\\Command\\CompositeCommand.cs",
+              "RelativeDocumentMoniker": "Server\\Patterns\\Command\\CompositeCommand.cs",
+              "ToolTip": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Patterns\\Command\\CompositeCommand.cs",
+              "RelativeToolTip": "Server\\Patterns\\Command\\CompositeCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:10:43.674Z"
             }
           ]
         }

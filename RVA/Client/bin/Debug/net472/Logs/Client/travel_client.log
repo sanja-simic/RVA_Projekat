@@ -200,3 +200,731 @@
 2025-09-17 19:36:48 [INFO] TravelSystem.Client - Client application exiting
 2025-09-17 19:36:48 [INFO] TravelSystem.Client - Stopping server process with PID: 27628
 2025-09-17 19:36:48 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 13:54:53 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 13:54:53 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 13:54:53 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 13:55:03 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:55:08 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 13:55:08 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 13:55:08 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 13:55:08 [INFO] TravelSystem.Client - Server process started successfully with PID: 19564
+2025-09-18 13:55:08 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 13:55:12 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 13:55:30 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 13:55:30 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 13:56:07 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 13:56:07 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 13:56:12 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 13:56:12 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 13:56:13 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 13:56:13 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 13:56:31 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 13:56:31 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 13:56:33 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 13:56:33 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 13:56:34 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 13:56:34 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 13:56:55 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 13:56:55 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 13:56:57 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 13:56:57 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 13:57:30 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 13:57:30 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 13:57:32 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 13:57:32 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Stopping server process with PID: 19564
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 13:57:47 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 13:57:48 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:57:50 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 13:57:50 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 13:57:50 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 13:57:50 [INFO] TravelSystem.Client - Server process started successfully with PID: 19256
+2025-09-18 13:57:50 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 13:57:54 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Stopping server process with PID: 19256
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 13:57:57 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 13:57:58 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:58:01 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 13:58:01 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 13:58:01 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 13:58:01 [INFO] TravelSystem.Client - Server process started successfully with PID: 6116
+2025-09-18 13:58:01 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 13:58:04 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Stopping server process with PID: 6116
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 13:58:24 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 13:58:26 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 13:58:26 [ERROR] TravelSystem.Client - Error stopping server process - Exception: System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_HasExited()
+   at TravelSystem.Client.App.StopServer() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\App.xaml.cs:line 119
+2025-09-18 14:21:57 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 14:21:57 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 14:21:57 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 14:22:33 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:22:38 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 14:22:38 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 14:22:38 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:22:38 [INFO] TravelSystem.Client - Server process started successfully with PID: 19536
+2025-09-18 14:22:38 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:22:41 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 14:23:31 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 14:23:31 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Stopping server process with PID: 19536
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:23:41 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 14:23:42 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:23:44 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 14:23:44 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 14:23:44 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:23:44 [INFO] TravelSystem.Client - Server process started successfully with PID: 19552
+2025-09-18 14:23:44 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:23:48 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 14:24:27 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 14:24:27 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Stopping server process with PID: 19552
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:24:30 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 14:24:34 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:24:36 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 14:24:36 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 14:24:36 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:24:36 [INFO] TravelSystem.Client - Server process started successfully with PID: 4456
+2025-09-18 14:24:36 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:24:40 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 14:31:54 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 14:31:54 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 14:32:05 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 14:32:05 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 14:32:08 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:08 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:08 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:08 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:10 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:10 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:12 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:32:12 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:32:13 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:32:13 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:32:29 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:29 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:35 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:35 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:36 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:32:36 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:32:38 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:38 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:51 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:32:51 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:32:53 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:32:53 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:00 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:00 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:02 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:02 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:03 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:03 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:04 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:04 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:06 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:06 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:08 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:08 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:08 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:08 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:09 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:09 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:09 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:09 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:33:11 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:33:13 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:33:14 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:42:08 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 14:42:08 [INFO] TravelSystem.Client - Stopping server process with PID: 4456
+2025-09-18 14:42:08 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:57:42 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 14:57:43 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 14:57:43 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 14:57:48 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:57:49 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 14:57:49 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 14:57:49 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:57:50 [INFO] TravelSystem.Client - Server process started successfully with PID: 12356
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:57:53 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 14:58:04 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 14:58:04 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 14:58:20 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:58:20 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:58:24 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:58:24 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:58:27 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:58:27 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:58:27 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:58:27 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:58:40 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:58:40 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:58:43 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:58:43 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:58:44 [INFO] TravelSystem.Client - ExecuteUndo called. CanUndo: True
+2025-09-18 14:58:44 [INFO] TravelSystem.Client - Undo executed successfully
+2025-09-18 14:58:46 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:58:46 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:58:49 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:58:49 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:58:52 [INFO] TravelSystem.Client - ExecuteRedo called. CanRedo: True
+2025-09-18 14:58:52 [INFO] TravelSystem.Client - Redo executed successfully
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Stopping server process with PID: 12356
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:58:59 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 14:59:01 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:59:03 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 14:59:03 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:59:03 [INFO] TravelSystem.Client - Server process started successfully with PID: 23360
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:59:06 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Stopping server process with PID: 23360
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:59:15 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 14:59:16 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:59:20 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 14:59:20 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 14:59:20 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:59:20 [INFO] TravelSystem.Client - Server process started successfully with PID: 4592
+2025-09-18 14:59:20 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:59:23 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Stopping server process with PID: 4592
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 14:59:40 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 14:59:44 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 14:59:44 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 14:59:44 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 14:59:44 [INFO] TravelSystem.Client - Server process started successfully with PID: 22696
+2025-09-18 14:59:44 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 14:59:47 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 14:59:55 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 14:59:55 [INFO] TravelSystem.Client - Stopping server process with PID: 22696
+2025-09-18 14:59:55 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:07:37 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 15:07:38 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 15:07:38 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 15:07:43 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:07:47 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:07:47 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:07:47 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:07:48 [INFO] TravelSystem.Client - Server process started successfully with PID: 24240
+2025-09-18 15:07:48 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:07:52 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:08:07 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 15:08:07 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Stopping server process with PID: 24240
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:08:12 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:08:13 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:08:16 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:08:16 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:08:16 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:08:16 [INFO] TravelSystem.Client - Server process started successfully with PID: 23836
+2025-09-18 15:08:16 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:08:19 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:08:47 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 15:08:47 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Stopping server process with PID: 23836
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:10:00 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:10:05 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:10:07 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:10:07 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:10:07 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:10:07 [INFO] TravelSystem.Client - Server process started successfully with PID: 26176
+2025-09-18 15:10:07 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:10:11 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:16:04 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 15:16:04 [INFO] TravelSystem.Client - Stopping server process with PID: 26176
+2025-09-18 15:16:04 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:16:20 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 15:16:20 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 15:16:20 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 15:16:33 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:16:35 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:16:35 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:16:35 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:16:36 [INFO] TravelSystem.Client - Server process started successfully with PID: 24172
+2025-09-18 15:16:36 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:16:39 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:17:04 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 15:17:04 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Stopping server process with PID: 24172
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:17:06 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:17:07 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:17:10 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:17:10 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:17:10 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:17:10 [INFO] TravelSystem.Client - Server process started successfully with PID: 14372
+2025-09-18 15:17:10 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:17:13 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Stopping server process with PID: 14372
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:17:39 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:17:43 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:17:43 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:17:43 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:17:43 [INFO] TravelSystem.Client - Server process started successfully with PID: 18724
+2025-09-18 15:17:43 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:17:46 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:17:50 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 15:17:50 [INFO] TravelSystem.Client - Stopping server process with PID: 18724
+2025-09-18 15:17:50 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:32:24 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 15:32:24 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 15:32:25 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 15:32:38 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:32:39 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 15:32:39 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 15:32:39 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:32:40 [INFO] TravelSystem.Client - Server process started successfully with PID: 24924
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:32:43 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 15:33:25 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 15:33:25 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Stopping server process with PID: 24924
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:33:32 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:33:34 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 15:33:34 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:33:34 [INFO] TravelSystem.Client - Server process started successfully with PID: 11952
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:33:37 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Stopping server process with PID: 11952
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:33:52 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:33:53 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:33:55 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:33:55 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:33:55 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:33:55 [INFO] TravelSystem.Client - Server process started successfully with PID: 22356
+2025-09-18 15:33:55 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:33:59 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:34:11 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 15:34:11 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Stopping server process with PID: 22356
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:34:39 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:34:42 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:34:42 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:34:42 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:34:42 [INFO] TravelSystem.Client - Server process started successfully with PID: 24044
+2025-09-18 15:34:42 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:34:45 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Stopping server process with PID: 24044
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:34:57 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:34:58 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:35:01 [INFO] TravelSystem.Client - Connection cancelled by user
+2025-09-18 15:35:02 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 15:35:02 [ERROR] TravelSystem.Client - Error stopping server process - Exception: System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_HasExited()
+   at TravelSystem.Client.App.StopServer() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\App.xaml.cs:line 119
+2025-09-18 15:47:17 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 15:47:18 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 15:47:18 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 15:47:38 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:47:52 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 15:47:52 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:47:52 [INFO] TravelSystem.Client - Server process started successfully with PID: 7028
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:47:55 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 15:49:11 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 15:49:11 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Stopping server process with PID: 7028
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:49:14 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:49:15 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:49:17 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 15:49:17 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:49:17 [INFO] TravelSystem.Client - Server process started successfully with PID: 15708
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:49:20 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 15:49:36 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:49:36 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:49:36 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:49:36 [INFO] TravelSystem.Client - Stopping server process with PID: 15708
+2025-09-18 15:49:36 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:49:37 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:49:38 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:49:40 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:49:40 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:49:40 [INFO] TravelSystem.Client - Server process started successfully with PID: 2604
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:49:43 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Stopping server process with PID: 2604
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:49:58 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 15:49:59 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:50:01 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 15:50:01 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 15:50:01 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:50:01 [INFO] TravelSystem.Client - Server process started successfully with PID: 15384
+2025-09-18 15:50:01 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:50:05 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 15:50:30 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 15:50:30 [INFO] TravelSystem.Client - Stopping server process with PID: 15384
+2025-09-18 15:50:30 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 15:59:22 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 15:59:22 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 15:59:22 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 15:59:25 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 15:59:29 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 15:59:29 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 15:59:29 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 15:59:29 [INFO] TravelSystem.Client - Server process started successfully with PID: 17984
+2025-09-18 15:59:29 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 15:59:32 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 16:00:15 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 16:00:15 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Stopping server process with PID: 17984
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:00:24 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:00:25 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:00:27 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 16:00:27 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 16:00:27 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:00:27 [INFO] TravelSystem.Client - Server process started successfully with PID: 21912
+2025-09-18 16:00:27 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:00:31 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Stopping server process with PID: 21912
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:00:43 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:00:44 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:00:45 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:00:45 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:00:45 [INFO] TravelSystem.Client - Server process started successfully with PID: 10068
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:00:48 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:00:58 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 16:00:58 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Stopping server process with PID: 10068
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:01:23 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:01:24 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:25 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:01:25 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:01:25 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:01:25 [INFO] TravelSystem.Client - Server process started successfully with PID: 24428
+2025-09-18 16:01:25 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:01:29 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Stopping server process with PID: 24428
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:01:35 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:01:36 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:39 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 16:01:39 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 16:01:39 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:01:39 [INFO] TravelSystem.Client - Server process started successfully with PID: 24484
+2025-09-18 16:01:39 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:01:43 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Stopping server process with PID: 24484
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:01:45 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:01:46 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:01:48 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 16:01:48 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 16:01:48 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:01:48 [INFO] TravelSystem.Client - Server process started successfully with PID: 25564
+2025-09-18 16:01:48 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:01:51 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 16:02:53 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 16:02:53 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Stopping server process with PID: 25564
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:02:56 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:03:00 [INFO] TravelSystem.Client - Starting server with format: xml
+2025-09-18 16:03:00 [INFO] TravelSystem.Client - Attempting to start server with format: xml
+2025-09-18 16:03:00 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:03:00 [INFO] TravelSystem.Client - Server process started successfully with PID: 2364
+2025-09-18 16:03:00 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:03:03 [INFO] TravelSystem.Client - Successfully connected to server with xml format
+2025-09-18 16:03:08 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:03:08 [INFO] TravelSystem.Client - Stopping server process with PID: 2364
+2025-09-18 16:03:08 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:08:12 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 16:08:12 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 16:08:13 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 16:08:15 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:08:17 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:08:17 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:08:17 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:08:17 [INFO] TravelSystem.Client - Server process started successfully with PID: 8076
+2025-09-18 16:08:17 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:08:21 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:08:59 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 16:08:59 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Stopping server process with PID: 8076
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:09:01 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:09:02 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:09:04 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:09:04 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:09:04 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:09:04 [INFO] TravelSystem.Client - Server process started successfully with PID: 25960
+2025-09-18 16:09:04 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:09:07 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:09:18 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:09:18 [INFO] TravelSystem.Client - Stopping server process with PID: 25960
+2025-09-18 16:09:18 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:15:24 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 16:15:24 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 16:15:24 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 16:15:27 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:15:29 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:15:29 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:15:29 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:15:29 [INFO] TravelSystem.Client - Server process started successfully with PID: 21628
+2025-09-18 16:15:29 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:15:33 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:15:51 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 16:15:51 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Stopping server process with PID: 21628
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:15:53 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:15:54 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:15:56 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:15:56 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:15:56 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:15:56 [INFO] TravelSystem.Client - Server process started successfully with PID: 22620
+2025-09-18 16:15:56 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:15:59 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:16:07 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:16:07 [INFO] TravelSystem.Client - Stopping server process with PID: 22620
+2025-09-18 16:16:07 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:16:27 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 16:16:27 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 16:16:27 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 16:16:30 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:16:32 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:16:32 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:16:32 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:16:32 [INFO] TravelSystem.Client - Server process started successfully with PID: 22684
+2025-09-18 16:16:32 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:16:36 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:16:46 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 16:16:46 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Stopping server process with PID: 22684
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:16:53 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:16:54 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:16:56 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:16:56 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:16:56 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:16:56 [INFO] TravelSystem.Client - Server process started successfully with PID: 9772
+2025-09-18 16:16:56 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:16:59 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:17:01 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:17:01 [INFO] TravelSystem.Client - Stopping server process with PID: 9772
+2025-09-18 16:17:01 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:17:13 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 16:17:13 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 16:17:13 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 16:17:17 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:17:19 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:17:19 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:17:19 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:17:19 [INFO] TravelSystem.Client - Server process started successfully with PID: 24880
+2025-09-18 16:17:19 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:17:23 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:17:31 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 16:17:31 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Stopping server process with PID: 24880
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:17:33 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:17:34 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:17:36 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:17:36 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:17:36 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:17:36 [INFO] TravelSystem.Client - Server process started successfully with PID: 26168
+2025-09-18 16:17:36 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:17:39 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:18:05 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:18:06 [INFO] TravelSystem.Client - Stopping server process with PID: 26168
+2025-09-18 16:18:06 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:18:46 [INFO] TravelSystem.Client - Client application starting
+2025-09-18 16:18:46 [INFO] TravelSystem.Client - MainViewModel initializing
+2025-09-18 16:18:46 [INFO] TravelSystem.Client - MainViewModel initialized successfully
+2025-09-18 16:19:07 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:10 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:19:10 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:19:10 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:19:10 [INFO] TravelSystem.Client - Server process started successfully with PID: 23636
+2025-09-18 16:19:10 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:19:13 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:19:19 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: False
+2025-09-18 16:19:19 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Stopping server process with PID: 23636
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:19:20 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:19:21 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:23 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:19:23 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:19:23 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:19:23 [INFO] TravelSystem.Client - Server process started successfully with PID: 17628
+2025-09-18 16:19:23 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:19:26 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Stopping server process with PID: 17628
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:19:28 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:19:29 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:32 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 16:19:32 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 16:19:32 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:19:32 [INFO] TravelSystem.Client - Server process started successfully with PID: 18292
+2025-09-18 16:19:32 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:19:35 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 16:19:41 [INFO] TravelSystem.Client - Adding arrangement command to undo stack. Current CanUndo: True
+2025-09-18 16:19:41 [INFO] TravelSystem.Client - After adding command. CanUndo: True, CanRedo: False
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Stopping server process with PID: 18292
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:19:43 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:19:44 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:46 [INFO] TravelSystem.Client - Starting server with format: json
+2025-09-18 16:19:46 [INFO] TravelSystem.Client - Attempting to start server with format: json
+2025-09-18 16:19:46 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:19:46 [INFO] TravelSystem.Client - Server process started successfully with PID: 10648
+2025-09-18 16:19:46 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:19:49 [INFO] TravelSystem.Client - Successfully connected to server with json format
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Currently connected, disconnecting first
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Disconnecting from server
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Stopping server process with PID: 10648
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Server process stopped successfully
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Successfully disconnected from server and cleared data
+2025-09-18 16:19:52 [INFO] TravelSystem.Client - Attempting to initialize service connection
+2025-09-18 16:19:55 [INFO] TravelSystem.Client - Starting server with format: csv
+2025-09-18 16:19:55 [INFO] TravelSystem.Client - Attempting to start server with format: csv
+2025-09-18 16:19:55 [DEBUG] TravelSystem.Client - Server executable found at: C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\..\..\..\..\Server\bin\Debug\Server.exe
+2025-09-18 16:19:55 [INFO] TravelSystem.Client - Server process started successfully with PID: 16676
+2025-09-18 16:19:55 [DEBUG] TravelSystem.Client - Waiting for server to start (3 seconds)
+2025-09-18 16:19:58 [INFO] TravelSystem.Client - Successfully connected to server with csv format
+2025-09-18 16:20:02 [INFO] TravelSystem.Client - Client application exiting
+2025-09-18 16:20:02 [INFO] TravelSystem.Client - Stopping server process with PID: 16676
+2025-09-18 16:20:02 [INFO] TravelSystem.Client - Server process stopped successfully

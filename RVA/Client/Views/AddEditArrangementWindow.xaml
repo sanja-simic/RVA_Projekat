@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="{Binding WindowTitle}" Height="500" Width="700"
+        Title="{Binding WindowTitle}" Height="600" Width="700"
         WindowStartupLocation="CenterOwner" ResizeMode="CanResize">
     
     <Window.Resources>
@@ -129,7 +129,9 @@
                         SelectedItem="{Binding SelectedPassengerToAdd}"
                         DisplayMemberPath="FullName"
                         Margin="5"
-                        MinHeight="100"/>
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                        Height="200"/>
                 
                 <!-- Buttons -->
                 <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
@@ -150,7 +152,9 @@
                         SelectedItem="{Binding SelectedPassengerInList}"
                         DisplayMemberPath="FullName"
                         Margin="5"
-                        MinHeight="100"/>
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                        Height="200"/>
                 
                 <TextBlock Grid.Row="2" Grid.Column="2" 
                           Text="{Binding SelectedPassengers.Count, StringFormat='Total: {0} passengers'}"

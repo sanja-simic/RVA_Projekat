@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0f46QKBvIBQ=",
+  "dgSpecHash": "3geFjh99waQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sanja\\Desktop\\RVAProjekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Users\\Ana\\Documents\\Faks\\4. god\\RVA\\projekat\\RVA_Projekat\\RVA\\Server\\Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sanja\\.nuget\\packages\\log4net\\3.2.0\\log4net.3.2.0.nupkg.sha512",
-    "C:\\Users\\Sanja\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Ana\\.nuget\\packages\\log4net\\3.2.0\\log4net.3.2.0.nupkg.sha512",
+    "C:\\Users\\Ana\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

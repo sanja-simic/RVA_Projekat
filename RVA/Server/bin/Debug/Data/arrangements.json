@@ -1,22 +1,74 @@
 ﻿[
   {
+    "Id": "sample-1",
     "AssociatedTransportation": "Plane",
     "NumberOfDays": 7,
-    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
-    "Destination": "TravelSystem.Models.Entities.Destination",
     "State": "Reserved",
-    "Id": "1",
-    "CreatedAt": "2025-09-17T19:16:47.201Z",
-    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+    "CreatedAt": "2025-09-18T21:53:12.094Z",
+    "UpdatedAt": "2025-09-18T21:53:12.094Z",
+    "Destination": {
+      "Id": "1",
+      "TownName": "Paris",
+      "CountryName": "France",
+      "StayPriceByDay": 150,
+      "CreatedAt": "2025-09-18T21:53:12.068Z",
+      "UpdatedAt": "2025-09-18T21:53:12.069Z"
+    },
+    "Passengers": [
+    ]
   },
   {
-    "AssociatedTransportation": "Train",
-    "NumberOfDays": 5,
-    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
-    "Destination": "TravelSystem.Models.Entities.Destination",
+    "Id": "6555b53f-cf02-4afe-afb3-5315b557157d",
+    "AssociatedTransportation": "Plane",
+    "NumberOfDays": 1,
     "State": "Reserved",
-    "Id": "2",
-    "CreatedAt": "2025-09-17T19:16:47.201Z",
-    "UpdatedAt": "2025-09-17T19:16:47.201Z"
+    "CreatedAt": "2025-09-18T16:08:59.855Z",
+    "UpdatedAt": "2025-09-18T16:08:59.855Z",
+    "Destination": {
+      "Id": "d51cefa9-3100-44d6-91c2-b5b091debaeb",
+      "TownName": "x",
+      "CountryName": "x",
+      "StayPriceByDay": 50,
+      "CreatedAt": "2025-09-18T16:08:59.855Z",
+      "UpdatedAt": "2025-09-18T16:08:59.855Z"
+    },
+    "Passengers": [
+      {
+        "Id": "44464739-7ce7-4f98-861f-9c98b6312345",
+        "FirstName": "x",
+        "LastName": "x",
+        "PassportNumber": "12345678",
+        "LuggageWeight": 0,
+        "CreatedAt": "2025-09-18T16:08:59.855Z",
+        "UpdatedAt": "2025-09-18T16:08:59.855Z"
+      }
+    ]
+  },
+  {
+    "Id": "ab185d76-163c-4893-af84-5370a5e0609d",
+    "AssociatedTransportation": "Plane",
+    "NumberOfDays": 1,
+    "State": "Reserved",
+    "CreatedAt": "2025-09-18T16:08:59.917Z",
+    "UpdatedAt": "2025-09-18T16:08:59.917Z",
+    "Destination": {
+      "Id": "d51cefa9-3100-44d6-91c2-b5b091debaeb",
+      "TownName": "x",
+      "CountryName": "x",
+      "StayPriceByDay": 50,
+      "CreatedAt": "2025-09-18T16:08:59.917Z",
+      "UpdatedAt": "2025-09-18T16:08:59.917Z"
+    },
+    "Passengers": [
+      {
+        "Id": "44464739-7ce7-4f98-861f-9c98b6312345",
+        "FirstName": "x",
+        "LastName": "x",
+        "PassportNumber": "12345678",
+        "LuggageWeight": 0,
+        "CreatedAt": "2025-09-18T16:08:59.917Z",
+        "UpdatedAt": "2025-09-18T16:08:59.917Z"
+      }
+    ]
   }
 ]

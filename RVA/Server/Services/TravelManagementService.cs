@@ -58,6 +58,11 @@ namespace TravelSystem.Server.Services
                     var loadedDestinations = _dataManager.LoadData<Destination>("destinations");
                     var loadedPassengers = _dataManager.LoadData<Passenger>("passengers");
 
+                    // Clear existing collections to avoid duplicates
+                    _arrangements.Clear();
+                    _destinations.Clear();
+                    _passengers.Clear();
+
                     _arrangements.AddRange(loadedArrangements);
                     _destinations.AddRange(loadedDestinations);
                     _passengers.AddRange(loadedPassengers);
@@ -65,23 +70,34 @@ namespace TravelSystem.Server.Services
                     _loggingService?.Info($"Loaded data: {_arrangements.Count} arrangements, {_destinations.Count} destinations, {_passengers.Count} passengers");
                 }
 
-                // If no data loaded, create sample data
+                // If no destinations loaded, create sample data (only destinations and passengers, not arrangements)
                 if (!_destinations.Any())
                 {
-                    _loggingService?.Info("No existing data found, creating sample data");
-                    CreateSampleData();
+                    _loggingService?.Info("No existing destinations found, creating sample destinations and passengers");
+                    CreateSampleDestinationsAndPassengers();
+                }
+                
+                // Only create sample arrangements if we have NO arrangements at all
+                if (!_arrangements.Any() && _destinations.Any())
+                {
+                    _loggingService?.Info("No existing arrangements found, creating minimal sample arrangement");
+                    CreateMinimalSampleArrangement();
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error loading data: {ex.Message}");
                 _loggingService?.Error("Error loading data, creating sample data instead", ex);
-                CreateSampleData();
+                CreateSampleDestinationsAndPassengers();
             }
         }
 
-        private void CreateSampleData()
+        private void CreateSampleDestinationsAndPassengers()
         {
+            // Clear to avoid duplicates
+            _destinations.Clear();
+            _passengers.Clear();
+            
             // Add some sample destinations
             var paris = new Destination("1", "Paris", "France", 150.0);
             var london = new Destination("2", "London", "England", 200.0);
@@ -95,17 +111,21 @@ namespace TravelSystem.Server.Services
             
             _passengers.AddRange(new[] { passenger1, passenger2 });
 
-            // Add some sample arrangements
-            var arrangement1 = new TravelArrangement("1", ModeOfTransport.Plane, 7, paris);
-            arrangement1.Passengers.Add(passenger1);
-            
-            var arrangement2 = new TravelArrangement("2", ModeOfTransport.Train, 5, london);
-            arrangement2.Passengers.Add(passenger2);
-            
-            _arrangements.AddRange(new[] { arrangement1, arrangement2 });
-
             // Save initial data
             SaveAllData();
+        }
+
+        private void CreateMinimalSampleArrangement()
+        {
+            if (_destinations.Any() && _passengers.Any())
+            {
+                // Create only one sample arrangement
+                var arrangement = new TravelArrangement("sample-1", ModeOfTransport.Plane, 7, _destinations.First());
+                arrangement.Passengers.Add(_passengers.First());
+                
+                _arrangements.Add(arrangement);
+                SaveAllData();
+            }
         }
 
         private void SaveAllData()

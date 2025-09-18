@@ -4,23 +4,15 @@
     "CountryName": "France",
     "StayPriceByDay": 150,
     "Id": "1",
-    "CreatedAt": "2025-09-17T19:16:47.200Z",
-    "UpdatedAt": "2025-09-17T19:16:47.200Z"
+    "CreatedAt": "2025-09-18T18:04:27.524Z",
+    "UpdatedAt": "2025-09-18T18:04:27.524Z"
   },
   {
-    "TownName": "London",
-    "CountryName": "England",
-    "StayPriceByDay": 200,
-    "Id": "2",
-    "CreatedAt": "2025-09-17T19:16:47.200Z",
-    "UpdatedAt": "2025-09-17T19:16:47.200Z"
-  },
-  {
-    "TownName": "Rome",
-    "CountryName": "Italy",
-    "StayPriceByDay": 120,
-    "Id": "3",
-    "CreatedAt": "2025-09-17T19:16:47.200Z",
-    "UpdatedAt": "2025-09-17T19:16:47.200Z"
+    "TownName": "x",
+    "CountryName": "x",
+    "StayPriceByDay": 50,
+    "Id": "d51cefa9-3100-44d6-91c2-b5b091debaeb",
+    "CreatedAt": "2025-09-18T16:08:50.633Z",
+    "UpdatedAt": "2025-09-18T16:08:50.633Z"
   }
 ]

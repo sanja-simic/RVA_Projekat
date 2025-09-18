@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelSystem.Client"
         xmlns:helpers="clr-namespace:TravelSystem.Client.Helpers"
+        xmlns:converters="clr-namespace:TravelSystem.Client.Converters"
         xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
         Title="Travel Management System" Height="700" Width="1200"
@@ -13,6 +14,7 @@
         <helpers:BoolToConnectionStatusConverter x:Key="BoolToConnectionStatusConverter"/>
         <helpers:BoolToConnectionColorConverter x:Key="BoolToConnectionColorConverter"/>
         <helpers:BoolToConnectButtonTextConverter x:Key="BoolToConnectButtonTextConverter"/>
+        <converters:IndexToNumberConverter x:Key="IndexToNumberConverter"/>
         
         <Style x:Key="SearchTextBoxStyle" TargetType="TextBox">
             <Setter Property="Padding" Value="5"/>
@@ -152,9 +154,16 @@
                              AutoGenerateColumns="False"
                              CanUserAddRows="False"
                              IsReadOnly="True"
-                             SelectionMode="Single">
+                             SelectionMode="Single"
+                             AlternationCount="9999">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="80"/>
+                            <DataGridTextColumn Header="#" Width="40">
+                                <DataGridTextColumn.Binding>
+                                    <Binding Path="(ItemsControl.AlternationIndex)" 
+                                             RelativeSource="{RelativeSource AncestorType=DataGridRow}"
+                                             Converter="{StaticResource IndexToNumberConverter}"/>
+                                </DataGridTextColumn.Binding>
+                            </DataGridTextColumn>
                             <DataGridTextColumn Header="Destination" Binding="{Binding Destination.TownName}" Width="120"/>
                             <DataGridTextColumn Header="Country" Binding="{Binding Destination.CountryName}" Width="100"/>
                             <DataGridTextColumn Header="Transportation" Binding="{Binding AssociatedTransportation}" Width="100"/>

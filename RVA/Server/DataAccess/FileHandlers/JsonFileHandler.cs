@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using TravelSystem.Models.Entities;
+using TravelSystem.Models.Enums;
 
 namespace TravelSystem.Server.DataAccess.FileHandlers
 {
@@ -149,12 +150,197 @@ namespace TravelSystem.Server.DataAccess.FileHandlers
 
         private static T DeserializeEntities<T>(string json) where T : new()
         {
-            // Basic parsing - for production use proper JSON library like Newtonsoft.Json
-            // This is a minimal implementation to get basic functionality working
+            try 
+            {
+                if (string.IsNullOrWhiteSpace(json) || json.Trim() == "[]")
+                {
+                    return new T();
+                }
+
+                // Basic JSON parsing for simple entities (Destination, Passenger)
+                var lines = json.Split('\n').Select(l => l.Trim()).Where(l => !string.IsNullOrEmpty(l)).ToArray();
+                
+                var result = new T();
+                if (result is System.Collections.IList list)
+                {
+                    // Parse entities from JSON array
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        var line = lines[i];
+                        if (line == "{" && (i == 1 || lines[i-1] == "," || lines[i-1].Contains("[")))
+                        {
+                            var entity = ParseSimpleEntity(lines, ref i, typeof(T).GetGenericArguments()[0]);
+                            if (entity != null)
+                            {
+                                list.Add(entity);
+                            }
+                        }
+                    }
+                }
+                
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JSON deserialization error: {ex.Message}");
+                return new T();
+            }
+        }
+
+        private static object ParseSimpleEntity(string[] lines, ref int index, Type entityType)
+        {
+            try
+            {
+                object entity = null;
+                
+                // Create entity based on type
+                if (entityType == typeof(Destination))
+                {
+                    entity = ParseDestination(lines, ref index);
+                }
+                else if (entityType == typeof(Passenger))
+                {
+                    entity = ParsePassenger(lines, ref index);
+                }
+                
+                return entity;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error parsing entity: {ex.Message}");
+                return null;
+            }
+        }
+
+        private static Destination ParseDestination(string[] lines, ref int index)
+        {
+            string id = null, townName = null, countryName = null;
+            double stayPrice = 0;
+            DateTime createdAt = DateTime.Now, updatedAt = DateTime.Now;
+
+            index++; // Skip opening {
             
-            // For now, return empty list - the application will populate with sample data
-            // In production, implement proper JSON parsing
-            return new T();
+            while (index < lines.Length && !lines[index].StartsWith("}"))
+            {
+                var line = lines[index].Trim();
+                
+                if (line.StartsWith("\"Id\":"))
+                    id = ExtractStringValue(line);
+                else if (line.StartsWith("\"TownName\":"))
+                    townName = ExtractStringValue(line);
+                else if (line.StartsWith("\"CountryName\":"))
+                    countryName = ExtractStringValue(line);
+                else if (line.StartsWith("\"StayPriceByDay\":"))
+                    stayPrice = ExtractDoubleValue(line);
+                else if (line.StartsWith("\"CreatedAt\":"))
+                    createdAt = ExtractDateValue(line);
+                else if (line.StartsWith("\"UpdatedAt\":"))
+                    updatedAt = ExtractDateValue(line);
+                
+                index++;
+            }
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                return new Destination(id, townName, countryName, stayPrice)
+                {
+                    CreatedAt = createdAt,
+                    UpdatedAt = updatedAt
+                };
+            }
+            
+            return null;
+        }
+
+        private static Passenger ParsePassenger(string[] lines, ref int index)
+        {
+            string id = null, firstName = null, lastName = null, passportNumber = null;
+            int luggageWeight = 0;
+            DateTime createdAt = DateTime.Now, updatedAt = DateTime.Now;
+
+            index++; // Skip opening {
+            
+            while (index < lines.Length && !lines[index].StartsWith("}"))
+            {
+                var line = lines[index].Trim();
+                
+                if (line.StartsWith("\"Id\":"))
+                    id = ExtractStringValue(line);
+                else if (line.StartsWith("\"FirstName\":"))
+                    firstName = ExtractStringValue(line);
+                else if (line.StartsWith("\"LastName\":"))
+                    lastName = ExtractStringValue(line);
+                else if (line.StartsWith("\"PassportNumber\":"))
+                    passportNumber = ExtractStringValue(line);
+                else if (line.StartsWith("\"LuggageWeight\":"))
+                    luggageWeight = ExtractIntValue(line);
+                else if (line.StartsWith("\"CreatedAt\":"))
+                    createdAt = ExtractDateValue(line);
+                else if (line.StartsWith("\"UpdatedAt\":"))
+                    updatedAt = ExtractDateValue(line);
+                
+                index++;
+            }
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                return new Passenger(id, firstName, lastName, passportNumber, luggageWeight)
+                {
+                    CreatedAt = createdAt,
+                    UpdatedAt = updatedAt
+                };
+            }
+            
+            return null;
+        }
+
+        private static string ExtractStringValue(string line)
+        {
+            var startIndex = line.IndexOf('"', line.IndexOf(':')) + 1;
+            var endIndex = line.LastIndexOf('"');
+            if (startIndex > 0 && endIndex > startIndex)
+            {
+                return line.Substring(startIndex, endIndex - startIndex);
+            }
+            return null;
+        }
+
+        private static int ExtractIntValue(string line)
+        {
+            var colonIndex = line.IndexOf(':');
+            var commaIndex = line.IndexOf(',');
+            if (commaIndex == -1) commaIndex = line.Length;
+            
+            var valueStr = line.Substring(colonIndex + 1, commaIndex - colonIndex - 1).Trim();
+            if (int.TryParse(valueStr, out var result))
+            {
+                return result;
+            }
+            return 0;
+        }
+
+        private static double ExtractDoubleValue(string line)
+        {
+            var colonIndex = line.IndexOf(':');
+            var commaIndex = line.IndexOf(',');
+            if (commaIndex == -1) commaIndex = line.Length;
+            
+            var valueStr = line.Substring(colonIndex + 1, commaIndex - colonIndex - 1).Trim();
+            if (double.TryParse(valueStr, out var result))
+            {
+                return result;
+            }
+            return 0;
+        }
+
+        private static DateTime ExtractDateValue(string line)
+        {
+            var dateStr = ExtractStringValue(line);
+            if (DateTime.TryParse(dateStr, out var result))
+            {
+                return result;
+            }
+            return DateTime.Now;
         }
 
         private static string EscapeJson(string input)

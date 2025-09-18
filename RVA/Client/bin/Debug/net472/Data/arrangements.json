@@ -1,22 +1,74 @@
 ﻿[
   {
+    "Id": "sample-1",
     "AssociatedTransportation": "Plane",
     "NumberOfDays": 7,
-    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
-    "Destination": "TravelSystem.Models.Entities.Destination",
     "State": "Reserved",
-    "Id": "1",
-    "CreatedAt": "2025-09-17T19:35:59.934Z",
-    "UpdatedAt": "2025-09-17T19:35:59.934Z"
+    "CreatedAt": "2025-09-19T05:47:52.410Z",
+    "UpdatedAt": "2025-09-19T05:47:52.410Z",
+    "Destination": {
+      "Id": "1",
+      "TownName": "Paris",
+      "CountryName": "France",
+      "StayPriceByDay": 150,
+      "CreatedAt": "2025-09-19T05:47:52.393Z",
+      "UpdatedAt": "2025-09-19T05:47:52.393Z"
+    },
+    "Passengers": [
+    ]
   },
   {
-    "AssociatedTransportation": "Train",
-    "NumberOfDays": 5,
-    "Passengers": "System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger]",
-    "Destination": "TravelSystem.Models.Entities.Destination",
+    "Id": "ea6cc565-8380-48d2-9797-6cfedc6dea7a",
+    "AssociatedTransportation": "Plane",
+    "NumberOfDays": 1,
     "State": "Reserved",
-    "Id": "2",
-    "CreatedAt": "2025-09-17T19:35:59.934Z",
-    "UpdatedAt": "2025-09-17T19:35:59.934Z"
+    "CreatedAt": "2025-09-18T16:19:19.002Z",
+    "UpdatedAt": "2025-09-18T16:19:19.002Z",
+    "Destination": {
+      "Id": "1",
+      "TownName": "Paris",
+      "CountryName": "France",
+      "StayPriceByDay": 150,
+      "CreatedAt": "2025-09-18T16:19:19.002Z",
+      "UpdatedAt": "2025-09-18T16:19:19.002Z"
+    },
+    "Passengers": [
+      {
+        "Id": "1",
+        "FirstName": "John",
+        "LastName": "Doe",
+        "PassportNumber": "123456789",
+        "LuggageWeight": 23,
+        "CreatedAt": "2025-09-18T16:19:19.002Z",
+        "UpdatedAt": "2025-09-18T16:19:19.002Z"
+      }
+    ]
+  },
+  {
+    "Id": "a377aff9-9b5a-47ea-b9f5-aadbe7c74ada",
+    "AssociatedTransportation": "Plane",
+    "NumberOfDays": 1,
+    "State": "Reserved",
+    "CreatedAt": "2025-09-18T16:19:19.061Z",
+    "UpdatedAt": "2025-09-18T16:19:19.061Z",
+    "Destination": {
+      "Id": "1",
+      "TownName": "Paris",
+      "CountryName": "France",
+      "StayPriceByDay": 150,
+      "CreatedAt": "2025-09-18T16:19:19.060Z",
+      "UpdatedAt": "2025-09-18T16:19:19.060Z"
+    },
+    "Passengers": [
+      {
+        "Id": "1",
+        "FirstName": "John",
+        "LastName": "Doe",
+        "PassportNumber": "123456789",
+        "LuggageWeight": 23,
+        "CreatedAt": "2025-09-18T16:19:19.061Z",
+        "UpdatedAt": "2025-09-18T16:19:19.061Z"
+      }
+    ]
   }
 ]

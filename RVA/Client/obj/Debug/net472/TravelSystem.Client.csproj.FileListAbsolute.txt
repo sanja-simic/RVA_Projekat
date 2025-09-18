@@ -84,3 +84,36 @@ C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Trav
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.baml
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.g.cs
 C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Client\bin\Debug\net472\log4net.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\x86\libSkiaSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\x64\libSkiaSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\arm64\libSkiaSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\libSkiaSharp.dylib
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\x86\libHarfBuzzSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\x64\libHarfBuzzSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\arm64\libHarfBuzzSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\libHarfBuzzSharp.dylib
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\HarfBuzzSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\LiveChartsCore.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\LiveChartsCore.SkiaSharpView.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\LiveChartsCore.SkiaSharpView.WPF.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\log4net.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\Microsoft.Xaml.Behaviors.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\Newtonsoft.Json.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\SkiaSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\SkiaSharp.HarfBuzz.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\SkiaSharp.Views.WPF.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.Buffers.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.ComponentModel.Annotations.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.Drawing.Common.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.Memory.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.Numerics.Vectors.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\libHarfBuzzSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\bin\Debug\net472\libSkiaSharp.dll
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditDestinationWindow.baml
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.baml
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\AddEditDestinationWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\Views\DataFormatSelectionWindow.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\TravelSystem.Client_Content.g.cs
+C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Client\obj\Debug\net472\GeneratedInternalTypeHelper.g.cs

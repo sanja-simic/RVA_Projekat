@@ -843,3 +843,1835 @@
    at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
    at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Sanja\Desktop\RVAProjekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 138
+2025-09-18 13:55:08 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 13:55:08 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 13:55:08 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 13:55:08 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 13:55:08 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 13:55:09 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 13:55:09 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 13:55:09 [INFO] TravelSystem.Server - Loaded data: 6 arrangements, 4 destinations, 2 passengers
+2025-09-18 13:55:09 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 13:55:09 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 13:55:09 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:55:12 [INFO] TravelSystem.Server - Retrieved 6 arrangements
+2025-09-18 13:55:30 [INFO] TravelSystem.Server - Adding new arrangement for destination: Novi Sad
+2025-09-18 13:55:30 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 13:55:30 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 13:55:30 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 922b89af-8c58-4111-997f-754dd1101726
+2025-09-18 13:55:30 [INFO] TravelSystem.Server - Adding new arrangement for destination: Novi Sad
+2025-09-18 13:55:30 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 13:55:30 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 13:55:30 [INFO] TravelSystem.Server - Successfully added arrangement with ID: c3a8f23e-ea07-4baf-87f1-12376447863e
+2025-09-18 13:56:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:56:05 [INFO] TravelSystem.Server - Retrieved 8 arrangements
+2025-09-18 13:56:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:56:19 [INFO] TravelSystem.Server - Retrieved 8 arrangements
+2025-09-18 13:56:31 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 13:56:31 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 13:56:31 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 13:56:31 [INFO] TravelSystem.Server - Successfully added arrangement with ID: f16b93b1-6371-4b08-a7cd-987a5242e331
+2025-09-18 13:56:31 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 13:56:31 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 13:56:31 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 13:56:31 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 4190c6fe-666f-47ab-b84e-e14b431b7c6c
+2025-09-18 13:57:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:47 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 13:57:51 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 13:57:51 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - No existing data found, creating sample data
+2025-09-18 13:57:51 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 13:57:51 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 13:57:51 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 13:57:51 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 13:57:54 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:54 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:57:54 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:54 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:57:54 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:54 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:57:54 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:54 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:57:54 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:54 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:57:57 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:57:57 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 13:58:01 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 13:58:01 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - Loaded data: 10 arrangements, 4 destinations, 3 passengers
+2025-09-18 13:58:01 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 13:58:02 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 13:58:02 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 13:58:04 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:04 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:58:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:05 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:58:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:05 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:58:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:05 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:58:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:05 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 13:58:24 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 13:58:24 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:22:38 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 14:22:38 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - Loaded data: 10 arrangements, 4 destinations, 3 passengers
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:22:38 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:22:38 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 14:22:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:22:41 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:22:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:22:41 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:22:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:22:41 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:22:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:22:41 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:22:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:22:41 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:23:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:19 [INFO] TravelSystem.Server - Retrieved 10 arrangements
+2025-09-18 14:23:31 [INFO] TravelSystem.Server - Adding new arrangement for destination: dest
+2025-09-18 14:23:31 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:23:31 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:23:31 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 87003a4a-c7ec-43a4-9288-8fb614d136ae
+2025-09-18 14:23:31 [INFO] TravelSystem.Server - Adding new arrangement for destination: dest
+2025-09-18 14:23:31 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:23:31 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:23:31 [INFO] TravelSystem.Server - Successfully added arrangement with ID: cbbf5a41-470c-4149-9dcb-16b4ae869c2b
+2025-09-18 14:23:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:41 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:23:44 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:23:44 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 14:23:44 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:23:44 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 14:23:44 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:23:45 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:23:45 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:23:45 [INFO] TravelSystem.Server - Loaded data: 12 arrangements, 5 destinations, 3 passengers
+2025-09-18 14:23:45 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:23:45 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:23:45 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 14:23:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:48 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:23:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:48 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:23:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:48 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:23:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:48 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:23:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:23:48 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:24:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:13 [INFO] TravelSystem.Server - Retrieved 12 arrangements
+2025-09-18 14:24:27 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 14:24:27 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:24:27 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:24:27 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 46713201-60bd-413f-86d7-b3702233f690
+2025-09-18 14:24:27 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 14:24:27 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:24:27 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:24:27 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 1647a8d9-aa41-4360-ac60-43a22909be06
+2025-09-18 14:24:30 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:30 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:24:37 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 14:24:37 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - Loaded data: 14 arrangements, 5 destinations, 3 passengers
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:24:37 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:24:37 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 14:24:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:40 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:24:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:40 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:24:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:40 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:24:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:40 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:24:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:24:40 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:31:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:31:46 [INFO] TravelSystem.Server - Retrieved 14 arrangements
+2025-09-18 14:31:54 [INFO] TravelSystem.Server - Adding new arrangement for destination: Rome
+2025-09-18 14:31:54 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:31:54 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:31:54 [INFO] TravelSystem.Server - Successfully added arrangement with ID: d98edf33-847a-42ab-b6e8-a25ea29b3ac0
+2025-09-18 14:31:54 [INFO] TravelSystem.Server - Adding new arrangement for destination: Rome
+2025-09-18 14:31:54 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:31:54 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:31:54 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 3ef4b0ea-4112-42f0-8424-36ec7e73b9f8
+2025-09-18 14:31:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:31:58 [INFO] TravelSystem.Server - Retrieved 16 arrangements
+2025-09-18 14:32:05 [INFO] TravelSystem.Server - Adding new arrangement for destination: Rome
+2025-09-18 14:32:05 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:32:05 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:32:05 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 988e7865-0045-4a11-aff1-46d2abf0fb5f
+2025-09-18 14:32:05 [INFO] TravelSystem.Server - Adding new arrangement for destination: Rome
+2025-09-18 14:32:05 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:32:05 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:32:05 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 687dbdb0-4d38-4fa3-a27c-42e66e788054
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - No existing data found, creating sample data
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:57:50 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:57:50 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:57:51 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 14:57:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:57:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:57:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:57:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:57:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:57:57 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:57:57 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:58:03 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 14:58:03 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:58:03 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:58:03 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 87cb4b4b-52ba-4992-8523-2236c1b42ea0
+2025-09-18 14:58:04 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 14:58:04 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:58:04 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:58:04 [INFO] TravelSystem.Server - Successfully added arrangement with ID: dab55e3e-46b5-4f10-ad8c-d1d925e6d152
+2025-09-18 14:58:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:58:59 [INFO] TravelSystem.Server - Retrieved 4 arrangements
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - No existing data found, creating sample data
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 14:59:03 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:59:03 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:59:04 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 14:59:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:06 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:06 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:06 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:06 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:06 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:15 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:15 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:59:20 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 14:59:20 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - Loaded data: 18 arrangements, 5 destinations, 3 passengers
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:59:20 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:59:20 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 14:59:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:23 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:23 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:23 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:23 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:23 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:40 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 14:59:44 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 14:59:44 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - Loaded data: 18 arrangements, 5 destinations, 3 passengers
+2025-09-18 14:59:44 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 14:59:44 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 14:59:45 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 14:59:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:47 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:47 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:47 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:47 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 14:59:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 14:59:47 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:07:48 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:07:48 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - Loaded data: 9 arrangements, 3 destinations, 3 passengers
+2025-09-18 15:07:48 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:07:48 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:07:49 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:07:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:07:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:07:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:07:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:07:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:07:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:07:52 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:07 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:08:07 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:08:07 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:08:07 [INFO] TravelSystem.Server - Successfully added arrangement with ID: dad5ee4b-a7e2-4c75-aa7a-6a5017523820
+2025-09-18 15:08:07 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:08:07 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:08:07 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:08:07 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 33286517-2742-4fec-9d32-e1f92d80256c
+2025-09-18 15:08:12 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:12 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:08:16 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:08:16 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - Loaded data: 11 arrangements, 3 destinations, 3 passengers
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:08:16 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:08:16 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:08:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:21 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:21 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:08:36 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:08:47 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 15:08:47 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:08:47 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:08:47 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 11bd41c6-8359-4696-a862-962f3d1649b7
+2025-09-18 15:08:47 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 15:08:47 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:08:47 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:08:47 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 9bd4175b-ecbb-4e25-855c-b6a204a34901
+2025-09-18 15:09:19 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:09:19 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:00 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:00 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:07 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:10:07 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:10:07 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:10:07 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:10:07 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:10:08 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:10:08 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:10:08 [INFO] TravelSystem.Server - Loaded data: 13 arrangements, 3 destinations, 3 passengers
+2025-09-18 15:10:08 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:10:08 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:10:08 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:10:11 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:11 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:11 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:11 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:11 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:11 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:40 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:40 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:43 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:10:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:10:43 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:16:36 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:16:36 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - Loaded data: 13 arrangements, 3 destinations, 3 passengers
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:16:36 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:16:36 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:16:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:16:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:16:55 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:04 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:17:04 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:17:04 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:17:04 [INFO] TravelSystem.Server - Successfully added arrangement with ID: bc895840-eadd-4af3-93d1-c8cfc93d314e
+2025-09-18 15:17:04 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:17:04 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:17:04 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:17:04 [INFO] TravelSystem.Server - Successfully added arrangement with ID: b3fb5b63-22a3-4a07-9823-7043d461ca0e
+2025-09-18 15:17:06 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:06 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:17:10 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:17:10 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - Loaded data: 15 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:17:10 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:17:10 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:17:11 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:17:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:13 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:13 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:13 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:13 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:13 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:22 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:22 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:22 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:22 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:17:43 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:17:43 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - Loaded data: 15 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:17:43 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:17:43 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:17:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:17:46 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:17:46 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:32:40 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:32:40 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 15:32:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:43 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:32:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:43 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:32:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:43 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:32:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:43 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:32:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:43 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:32:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:32:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:18 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:18 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:25 [INFO] TravelSystem.Server - Adding new arrangement for destination: nnn
+2025-09-18 15:33:25 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:33:25 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:33:25 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 8f4ad9a3-25df-4380-9eb2-2fedadd97941
+2025-09-18 15:33:25 [INFO] TravelSystem.Server - Adding new arrangement for destination: nnn
+2025-09-18 15:33:25 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:33:25 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:33:25 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 33fa38fd-7cd6-41a7-9e14-de291e153f04
+2025-09-18 15:33:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:32 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:33:34 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:33:34 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:33:35 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 15:33:37 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:37 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:37 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:37 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:37 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:37 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:37 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:37 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:37 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:37 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:41 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:41 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:41 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:45 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:47 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:52 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:33:56 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:33:56 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - Loaded data: 15 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:33:56 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:33:56 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:33:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:59 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:33:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:59 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:33:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:59 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:33:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:59 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:33:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:33:59 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:05 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:10 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:34:10 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:34:10 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:34:10 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 5e2588eb-4f71-4f0c-801f-270d06f552a8
+2025-09-18 15:34:11 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 15:34:11 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:34:11 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:34:11 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 3f8243bd-a582-47ee-9358-4e9035ac1db2
+2025-09-18 15:34:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:21 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:39 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:34:42 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:34:42 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - Loaded data: 17 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:34:42 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:34:42 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:34:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:45 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:50 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:50 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:34:57 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:34:57 [ERROR] TravelSystem.Server - Error retrieving arrangements - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TravelSystem.Server.Services.TravelManagementService.ConvertToDto(TravelArrangement arrangement) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 415
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TravelSystem.Server.Services.TravelManagementService.GetAllArrangements() in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Services\TravelManagementService.cs:line 158
+2025-09-18 15:46:13 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - Data format selected interactively: XML
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:46:34 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:46:34 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:46:35 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:46:35 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 15:47:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:35 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:47:52 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:47:52 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:47:52 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 15:47:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:55 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:47:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:55 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:47:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:55 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:47:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:55 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:47:55 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:47:55 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:49:00 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:00 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:49:11 [INFO] TravelSystem.Server - Adding new arrangement for destination: aa
+2025-09-18 15:49:11 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:49:11 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:49:11 [INFO] TravelSystem.Server - Successfully added arrangement with ID: db19e743-abde-4917-a771-46b6e05a0d53
+2025-09-18 15:49:11 [INFO] TravelSystem.Server - Adding new arrangement for destination: aa
+2025-09-18 15:49:11 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:49:11 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:49:11 [INFO] TravelSystem.Server - Successfully added arrangement with ID: be78270e-3510-4ca2-a0e5-9b79c9f1f0fc
+2025-09-18 15:49:14 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:14 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:49:17 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:49:17 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:49:18 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:49:18 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 15:49:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:36 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:49:40 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:49:40 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:49:40 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 15:49:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:49:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:49:58 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:50:02 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 15:50:02 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - Loaded data: 18 arrangements, 5 destinations, 3 passengers
+2025-09-18 15:50:02 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:50:02 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:50:02 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 15:50:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:50:05 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:50:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:50:05 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:50:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:50:05 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:50:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:50:05 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:50:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:50:05 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 15:53:11 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:53:11 [INFO] TravelSystem.Server - Data format selected interactively: JSON
+2025-09-18 15:53:11 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:53:11 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:53:11 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:53:12 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:53:12 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:53:12 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:53:12 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:53:12 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:53:12 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 15:53:12 [FATAL] TravelSystem.Server - Error starting service - Exception: System.InvalidOperationException: Cannot read keys when either application does not have a console or when console input has been redirected from a file. Try Console.Read.
+   at System.Console.ReadKey(Boolean intercept)
+   at System.Console.ReadKey()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 71
+2025-09-18 15:53:16 [INFO] TravelSystem.Server - ServiceHost closed
+2025-09-18 15:53:16 [INFO] TravelSystem.Server - TravelSystem Server stopped
+2025-09-18 15:53:35 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - Data format selected interactively: XML
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:53:46 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 15:53:46 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - Loaded data: 3 arrangements, 4 destinations, 3 passengers
+2025-09-18 15:53:46 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:53:47 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:53:47 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 15:54:15 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:54:18 [INFO] TravelSystem.Server - Data format selected interactively: JSON
+2025-09-18 15:54:18 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:54:18 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 15:54:18 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:54:19 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:54:19 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:54:19 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:54:19 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 15:54:22 [INFO] TravelSystem.Server - Service stop requested by user input
+2025-09-18 15:54:22 [INFO] TravelSystem.Server - ServiceHost closed
+2025-09-18 15:54:22 [INFO] TravelSystem.Server - TravelSystem Server stopped
+2025-09-18 15:54:42 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - Data format selected interactively: CSV
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - Loaded data: 0 arrangements, 0 destinations, 0 passengers
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - No existing arrangements found, creating minimal sample arrangement
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 15:54:46 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:54:46 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:54:47 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:54:50 [INFO] TravelSystem.Server - Service stop requested by user input
+2025-09-18 15:54:50 [INFO] TravelSystem.Server - ServiceHost closed
+2025-09-18 15:54:50 [INFO] TravelSystem.Server - TravelSystem Server stopped
+2025-09-18 15:55:20 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - Data format selected interactively: CSV
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:55:38 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:55:38 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 3 destinations, 2 passengers
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:55:38 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:55:38 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:55:49 [INFO] TravelSystem.Server - Service stop requested by user input
+2025-09-18 15:55:49 [INFO] TravelSystem.Server - ServiceHost closed
+2025-09-18 15:55:49 [INFO] TravelSystem.Server - TravelSystem Server stopped
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 15:59:29 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 15:59:29 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 3 destinations, 4 passengers
+2025-09-18 15:59:29 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 15:59:30 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 15:59:30 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 15:59:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:59:32 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:59:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:59:32 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:59:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:59:32 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:59:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:59:32 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 15:59:32 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 15:59:32 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:05 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:05 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:15 [INFO] TravelSystem.Server - Adding new arrangement for destination: ns
+2025-09-18 16:00:15 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:00:15 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:00:15 [INFO] TravelSystem.Server - Successfully added arrangement with ID: fcdf4b7a-51bc-476d-81a3-5492a8f7f20b
+2025-09-18 16:00:15 [INFO] TravelSystem.Server - Adding new arrangement for destination: ns
+2025-09-18 16:00:15 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:00:15 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:00:15 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 6536a4cb-c643-4874-b2e3-509ebef05ad7
+2025-09-18 16:00:24 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:24 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:00:28 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 16:00:28 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - Loaded data: 3 arrangements, 4 destinations, 5 passengers
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:00:28 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:00:28 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 16:00:31 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:31 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:31 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:31 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:31 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:31 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:31 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:31 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:31 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:31 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 0 destinations, 0 passengers
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:00:45 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:00:45 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:00:46 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:00:46 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:00:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:48 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:48 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:48 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:48 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:48 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:48 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:00:51 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:00:58 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 16:00:58 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:00:58 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:00:58 [INFO] TravelSystem.Server - Successfully added arrangement with ID: e411ecc9-1e18-4023-853f-6e5653594324
+2025-09-18 16:00:58 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 16:00:58 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:00:58 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:00:58 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 37838737-bb66-4986-a11a-7479544f5a39
+2025-09-18 16:01:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:23 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:01:26 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:01:26 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 0 destinations, 0 passengers
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 16:01:26 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:01:26 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:01:26 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:01:26 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:01:29 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:29 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:29 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:29 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:29 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:29 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:29 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:29 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:29 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:29 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:35 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:01:39 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:01:39 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 16:01:39 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:01:39 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 16:01:39 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:01:40 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:01:40 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:01:40 [INFO] TravelSystem.Server - Loaded data: 3 arrangements, 4 destinations, 5 passengers
+2025-09-18 16:01:40 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:01:40 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:01:40 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 16:01:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:43 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:45 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:45 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:01:48 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 16:01:48 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - Loaded data: 18 arrangements, 5 destinations, 3 passengers
+2025-09-18 16:01:48 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:01:48 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:01:49 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:01:51 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:01:51 [INFO] TravelSystem.Server - Retrieved 18 arrangements
+2025-09-18 16:02:02 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 46713201-60bd-413f-86d7-b3702233f690
+2025-09-18 16:02:02 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:02 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:02 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 46713201-60bd-413f-86d7-b3702233f690
+2025-09-18 16:02:06 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 87003a4a-c7ec-43a4-9288-8fb614d136ae
+2025-09-18 16:02:06 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:06 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:06 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 87003a4a-c7ec-43a4-9288-8fb614d136ae
+2025-09-18 16:02:09 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: d98edf33-847a-42ab-b6e8-a25ea29b3ac0
+2025-09-18 16:02:09 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:09 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:09 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: d98edf33-847a-42ab-b6e8-a25ea29b3ac0
+2025-09-18 16:02:12 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 1647a8d9-aa41-4360-ac60-43a22909be06
+2025-09-18 16:02:12 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:12 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:12 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 1647a8d9-aa41-4360-ac60-43a22909be06
+2025-09-18 16:02:15 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 3ef4b0ea-4112-42f0-8424-36ec7e73b9f8
+2025-09-18 16:02:15 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:15 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:15 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 3ef4b0ea-4112-42f0-8424-36ec7e73b9f8
+2025-09-18 16:02:18 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 988e7865-0045-4a11-aff1-46d2abf0fb5f
+2025-09-18 16:02:18 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:18 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:18 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 988e7865-0045-4a11-aff1-46d2abf0fb5f
+2025-09-18 16:02:22 [INFO] TravelSystem.Server - Attempting to delete arrangement with ID: 687dbdb0-4d38-4fa3-a27c-42e66e788054
+2025-09-18 16:02:22 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:22 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:22 [INFO] TravelSystem.Server - Successfully deleted arrangement with ID: 687dbdb0-4d38-4fa3-a27c-42e66e788054
+2025-09-18 16:02:47 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:02:47 [INFO] TravelSystem.Server - Retrieved 11 arrangements
+2025-09-18 16:02:53 [INFO] TravelSystem.Server - Adding new arrangement for destination: mm
+2025-09-18 16:02:53 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:53 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:53 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 38dbb28e-7c34-4223-b20d-ad11ebf1e057
+2025-09-18 16:02:53 [INFO] TravelSystem.Server - Adding new arrangement for destination: mm
+2025-09-18 16:02:53 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:02:53 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:02:53 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 22c9e788-1bf9-4bb2-ab85-0d0c574097aa
+2025-09-18 16:02:56 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:02:56 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - Data format selected from command line: XML
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:03:00 [DEBUG] TravelSystem.Server - DataManager created with format: XML
+2025-09-18 16:03:00 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - Loaded data: 13 arrangements, 6 destinations, 4 passengers
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:03:00 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:03:00 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: XML
+2025-09-18 16:03:03 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:03:03 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:03:03 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:03:03 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:03:03 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:03:03 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:03:03 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:03:03 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:03:03 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:03:03 [INFO] TravelSystem.Server - Retrieved 13 arrangements
+2025-09-18 16:04:17 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - Data format selected interactively: JSON
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:04:27 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:04:27 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 0 destinations, 0 passengers
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - No existing destinations found, creating sample destinations and passengers
+2025-09-18 16:04:27 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:04:27 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:04:27 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:04:27 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:04:28 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:07:25 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - Data format selected interactively: JSON
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:07:38 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:07:38 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:07:38 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:07:38 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:08:18 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:08:18 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:08:18 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:08:18 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:08:18 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:21 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:21 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:08:53 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:08:59 [INFO] TravelSystem.Server - Adding new arrangement for destination: x
+2025-09-18 16:08:59 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:08:59 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:08:59 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 6555b53f-cf02-4afe-afb3-5315b557157d
+2025-09-18 16:08:59 [INFO] TravelSystem.Server - Adding new arrangement for destination: x
+2025-09-18 16:08:59 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:08:59 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:08:59 [INFO] TravelSystem.Server - Successfully added arrangement with ID: ab185d76-163c-4893-af84-5370a5e0609d
+2025-09-18 16:09:01 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:01 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:09:04 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:09:04 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:09:04 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:09:04 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:09:04 [FATAL] TravelSystem.Server - Error starting service - Exception: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at Server.Program.Main(String[] args) in C:\Users\Ana\Documents\Faks\4. god\RVA\projekat\RVA_Projekat\RVA\Server\Program.cs:line 58
+2025-09-18 16:09:07 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:07 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:09:07 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:07 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:09:07 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:07 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:09:07 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:07 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:09:07 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:09:07 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:15:30 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:15:30 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:15:30 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:15:30 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:15:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:33 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:33 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:33 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:33 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:33 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:44 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:44 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:51 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 16:15:51 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:15:51 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:15:51 [INFO] TravelSystem.Server - Successfully added arrangement with ID: e905a1cb-219e-43e5-bade-74b5d8e5199a
+2025-09-18 16:15:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:15:56 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:15:56 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:15:56 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:15:56 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:15:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:15:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:15:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:16:32 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:16:32 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:16:32 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:16:33 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:16:33 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:16:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:36 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:36 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:36 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:36 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:36 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:36 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:38 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:38 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:46 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 16:16:46 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:16:46 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:16:46 [INFO] TravelSystem.Server - Successfully added arrangement with ID: ef9b6fd0-5c40-4d66-9593-23908162a637
+2025-09-18 16:16:53 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:53 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:16:56 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:16:56 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:16:56 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:16:56 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:16:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:16:59 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:16:59 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:19 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:17:19 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:17:19 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:17:19 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:17:19 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:17:20 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:17:20 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:17:20 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:17:20 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:17:20 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:17:20 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:17:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:23 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:23 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:23 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:23 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:23 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:23 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:24 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:24 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:31 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 16:17:31 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:17:31 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:17:31 [INFO] TravelSystem.Server - Successfully added arrangement with ID: f66e58ec-1712-41d8-afe5-38b838fa8341
+2025-09-18 16:17:33 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:33 [INFO] TravelSystem.Server - Retrieved 2 arrangements
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:17:36 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:17:36 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:17:36 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:17:36 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:39 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:39 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:39 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:39 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:17:39 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:17:39 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:19:10 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:19:10 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:19:10 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:19:10 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:13 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:13 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:19 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 16:19:19 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:19:19 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:19:19 [INFO] TravelSystem.Server - Successfully added arrangement with ID: ea6cc565-8380-48d2-9797-6cfedc6dea7a
+2025-09-18 16:19:19 [INFO] TravelSystem.Server - Adding new arrangement for destination: Paris
+2025-09-18 16:19:19 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:19:19 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:19:19 [INFO] TravelSystem.Server - Successfully added arrangement with ID: a377aff9-9b5a-47ea-b9f5-aadbe7c74ada
+2025-09-18 16:19:20 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:20 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:19:23 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:19:23 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:19:23 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:19:23 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:19:24 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:19:26 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:26 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:26 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:26 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:26 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:26 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:26 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:26 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:26 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:26 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:28 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:28 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:19:32 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 16:19:32 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - Loaded data: 3 arrangements, 4 destinations, 5 passengers
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:19:32 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:19:32 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:35 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:35 [INFO] TravelSystem.Server - Retrieved 3 arrangements
+2025-09-18 16:19:41 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 16:19:41 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:19:41 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:19:41 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 2e8197ea-a745-4287-ab5d-28835ee8bbf4
+2025-09-18 16:19:41 [INFO] TravelSystem.Server - Adding new arrangement for destination: London
+2025-09-18 16:19:41 [DEBUG] TravelSystem.Server - Saving all data to storage
+2025-09-18 16:19:41 [DEBUG] TravelSystem.Server - All data saved successfully
+2025-09-18 16:19:41 [INFO] TravelSystem.Server - Successfully added arrangement with ID: 6b06a05a-a4a8-4d20-b7c3-8b259e598f79
+2025-09-18 16:19:43 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:43 [INFO] TravelSystem.Server - Retrieved 5 arrangements
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - Data format selected from command line: JSON
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:19:46 [DEBUG] TravelSystem.Server - DataManager created with format: JSON
+2025-09-18 16:19:46 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - Loaded data: 1 arrangements, 1 destinations, 1 passengers
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:19:46 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:19:46 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: JSON
+2025-09-18 16:19:49 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:49 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:49 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:49 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:49 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:49 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:49 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:49 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:49 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:49 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:52 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:52 [INFO] TravelSystem.Server - Retrieved 1 arrangements
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - TravelSystem Server starting
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - Data format selected from command line: CSV
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - Initializing server components
+2025-09-18 16:19:55 [DEBUG] TravelSystem.Server - DataManager created with format: CSV
+2025-09-18 16:19:55 [DEBUG] TravelSystem.Server - TravelManagementService configured with DataManager and LoggingService
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - TravelManagementService instance created
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - Initializing data from storage
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - Loaded data: 5 arrangements, 4 destinations, 5 passengers
+2025-09-18 16:19:55 [INFO] TravelSystem.Server - TravelManagementService initialization completed
+2025-09-18 16:19:55 [DEBUG] TravelSystem.Server - ServiceHost created
+2025-09-18 16:19:56 [INFO] TravelSystem.Server - TravelSystem Service started successfully - Endpoint: net.pipe://localhost/TravelService, Format: CSV
+2025-09-18 16:19:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:58 [INFO] TravelSystem.Server - Retrieved 5 arrangements
+2025-09-18 16:19:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:58 [INFO] TravelSystem.Server - Retrieved 5 arrangements
+2025-09-18 16:19:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:58 [INFO] TravelSystem.Server - Retrieved 5 arrangements
+2025-09-18 16:19:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:58 [INFO] TravelSystem.Server - Retrieved 5 arrangements
+2025-09-18 16:19:58 [DEBUG] TravelSystem.Server - GetAllArrangements method called
+2025-09-18 16:19:58 [INFO] TravelSystem.Server - Retrieved 5 arrangements

@@ -1,10 +1,6 @@
-AssociatedTransportation,NumberOfDays,Passengers,Destination,State,Id,CreatedAt,UpdatedAt
-Plane,7,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,1,9/17/2025 6:40:47 PM,9/17/2025 6:40:47 PM
-Train,5,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,2,9/17/2025 6:40:47 PM,9/17/2025 6:40:47 PM
-Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,985fc533-9c37-451e-b434-21a2c666bf40,9/17/2025 6:41:03 PM,9/17/2025 6:41:03 PM
-Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,63b06572-ea90-4b2a-a29c-48693a440599,9/17/2025 6:41:03 PM,9/17/2025 6:41:03 PM
-Plane,3,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,50d848c8-5819-4a57-a8fe-95ddf40afd2b,9/17/2025 7:33:32 PM,9/17/2025 7:33:32 PM
-Plane,3,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],,Reserved,ccc931e0-ad9c-4bc6-bb27-4b054af7b0d0,9/17/2025 7:33:32 PM,9/17/2025 7:33:32 PM
-Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,5da6a91f-5e14-44b3-ab06-829172122537,9/17/2025 7:34:19 PM,9/17/2025 7:34:19 PM
-Plane,1,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,b944e8e9-4459-46b5-a41b-0df9b3e74584,9/17/2025 7:34:19 PM,9/17/2025 7:34:19 PM
-Plane,2,System.Collections.Generic.List`1[TravelSystem.Models.Entities.Passenger],TravelSystem.Models.Entities.Destination,Reserved,ce5cbf63-8e86-46bf-a36f-22969246cf7b,9/17/2025 7:34:33 PM,9/17/2025 7:34:33 PM
+Id,Transportation,NumberOfDays,State,CreatedAt,UpdatedAt,DestinationId,DestinationTown,DestinationCountry,DestinationPrice,PassengerIds,PassengerNames
+sample-1,1,7,0,2025-09-18T19:49:40.545Z,2025-09-18T19:49:40.545Z,1,Paris,France,150,1,John Doe
+fcdf4b7a-51bc-476d-81a3-5492a8f7f20b,1,1,0,2025-09-18T18:00:15.592Z,2025-09-18T18:00:15.592Z,8f18d220-9dfe-46f8-a953-a95903aa9094,ns,srb,50,52b2d74e-28c0-4ec0-b530-90811c03a1a5,sanja simic
+6536a4cb-c643-4874-b2e3-509ebef05ad7,1,1,0,2025-09-18T18:00:15.652Z,2025-09-18T18:00:15.652Z,8f18d220-9dfe-46f8-a953-a95903aa9094,ns,srb,50,52b2d74e-28c0-4ec0-b530-90811c03a1a5,sanja simic
+2e8197ea-a745-4287-ab5d-28835ee8bbf4,1,1,0,2025-09-18T16:19:41.585Z,2025-09-18T16:19:41.585Z,2,London,England,200,2,Jane Smith
+6b06a05a-a4a8-4d20-b7c3-8b259e598f79,1,1,0,2025-09-18T16:19:41.628Z,2025-09-18T16:19:41.628Z,2,London,England,200,2,Jane Smith
